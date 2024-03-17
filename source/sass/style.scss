@@ -1,8 +1,27 @@
 // Vendor
-@import "vendor/normalize";
+@import "vendor/normalize.scss";
 
 // Global
+@import "global/variables.scss";
+@import "global/global.scss";
+@import "global/fonts.scss";
+@import "global/visually-hidden.scss";
+@import "global/button.scss";
 
 // Blocks
+@import "blocks/page-body.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main.scss";
 @import "blocks/swiper.scss";
 @import "blocks/features.scss";
+@import "blocks/about.scss";
+@import "blocks/price.scss";
+@import "blocks/games.scss";
+@import "blocks/offers.scss";
+@import "blocks/faq.scss";
+@import "blocks/reviews.scss";
+@import "blocks/form.scss";
+@import "blocks/input-control.scss";
+@import "blocks/footer.scss";
+@import "blocks/contacts.scss";
+@import "blocks/logo-links.scss";

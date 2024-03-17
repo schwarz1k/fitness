@@ -1,0 +1,14 @@
+.button {
+  border: 2px solid $basic-white;
+  padding: 22px;
+  width: 290px;
+  height: 60px;
+  background-color: transparent;
+  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: $basic-white;
+  cursor: pointer;
+}

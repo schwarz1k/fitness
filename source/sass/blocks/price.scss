@@ -1,0 +1,51 @@
+.price {
+  color: $basic-blue;
+}
+
+.price__title {
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 100%;
+  text-transform: none;
+}
+
+.price__option {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+}
+
+.price__card-title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 100%;
+}
+
+.price__card-subtitle {
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 157%;
+}
+
+.price__card-price {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--price);
+}
+
+.price__card-button {
+  border: 2px solid $basic-blue;
+  width: 195px;
+  height: 66px;
+  font-family: var(--font-family);
+  font-size: 12px;
+  line-height: 100%;
+  color: $basic-blue;
+}

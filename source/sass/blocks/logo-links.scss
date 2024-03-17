@@ -1,0 +1,12 @@
+.logo-links {
+  background-color: var(--dark);
+}
+
+.logo-links__link {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: $basic-white;
+  text-decoration: none;
+}
