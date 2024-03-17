@@ -1,0 +1,27 @@
+.features__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.features__left-block,
+.features__right-block {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.features__center-block {
+  flex: 1;
+  text-align: center;
+}
+
+.features__list {
+  list-style: none;
+  padding: 0;
+}
+
+.features__center-content {
+  font-size: 24px;
+  font-weight: bold;
+}
+
