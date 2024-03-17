@@ -1,0 +1,20 @@
+.contacts {
+  color: $basic-blue;
+}
+
+.contacts__label {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+}
+
+.contacts__info {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  font-style: normal;
+  text-decoration: none;
+  color: $basic-blue;
+}

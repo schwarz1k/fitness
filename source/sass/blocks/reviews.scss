@@ -1,0 +1,25 @@
+.reviews__title {
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 100%;
+}
+
+.reviews-slider {
+  background-color: var(--btn-border);
+  color: $basic-white;
+}
+
+.reviews__slider-title {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 111%;
+}
+
+.reviews__slider-description {
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 157%;
+}

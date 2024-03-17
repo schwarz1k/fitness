@@ -1,0 +1,39 @@
+.faq {
+  color: $basic-blue;
+}
+
+.faq__title {
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 100%;
+  color: $basic-blue;
+}
+
+.faq__tab {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  text-align: center;
+  color: $basic-blue;
+}
+
+.faq__tab--active {
+  color: $basic-white;
+  background-color: blue;
+}
+
+.faq__question {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+}
+
+.faq__answer {
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 125%;
+}

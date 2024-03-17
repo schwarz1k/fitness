@@ -1,3 +1,15 @@
+.swiper {
+  color: $basic-blue;
+}
+
+.swiper__title {
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 100%;
+  text-transform: none;
+}
+
 .swiper-container {
   width: 100%;
   height: 300px;
@@ -26,8 +38,30 @@
   padding: 10px;
 }
 
+.swiper-slide__info-name {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 100%;
+}
+
+.swiper-slide__info-description {
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  color: #b6bdcc;
+}
+
 .swiper-slide.expanded .swiper-slide__info {
   display: block;
+}
+
+.swiper-slide__info-item-description {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 157%;
 }
 
 .swiper-slide.expanded {
@@ -39,7 +73,11 @@
   bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
-  color: #ffffff;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 100%;
+  color: $basic-white;
 }
 
 .swiper-slide.expanded .swiper__slide-caption {

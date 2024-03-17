@@ -1,0 +1,26 @@
+.about {
+  color: $basic-blue;
+}
+
+.about__title {
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 100%;
+  color: $basic-blue;
+  text-transform: none;
+}
+
+.about__subtitle {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 111%;
+}
+
+.about__description {
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 157%;
+}
