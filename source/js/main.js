@@ -165,3 +165,40 @@ document.addEventListener('DOMContentLoaded', function() {
     errorDiv.style.display = 'none';
   }
 });
+
+// Video
+document.addEventListener('DOMContentLoaded', function() {
+  const playButton = document.querySelector('.about__play-button');
+
+  playButton.addEventListener('click', function() {
+    const videoContainer = document.querySelector('.about__video-container');
+    const iframe = document.createElement('iframe');
+    iframe.src = 'https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1&mute=1';
+    iframe.width = 320;
+    iframe.height = 170;
+    iframe.setAttribute('frameborder', '0');
+    iframe.setAttribute('allowfullscreen', '');
+    iframe.style.position = 'absolute'; // Устанавливаем позиционирование
+    iframe.style.top = '0'; // Устанавливаем позицию относительно верхнего края
+    iframe.style.left = '0'; // Устанавливаем позицию относительно левого края
+
+    const screenWidth = window.innerWidth;
+
+    if (screenWidth >= 1366) {
+      iframe.width = '360';
+      iframe.height = '230';
+    } else if (screenWidth >= 768) {
+      iframe.width = '100%';
+      iframe.height = '170';
+    } else {
+      iframe.width = '100%';
+      iframe.height = '170';
+    }
+
+    // Добавляем iframe поверх изображения
+    videoContainer.appendChild(iframe);
+    playButton.style.display = 'none';
+  });
+});
+
+
