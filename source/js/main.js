@@ -2,6 +2,7 @@ import Swiper from 'swiper';
 import {Navigation, Pagination} from 'swiper/modules';
 import 'swiper/css';
 
+
 // Change Price
 document.addEventListener('DOMContentLoaded', function() {
   const optionItems = document.querySelectorAll('.price__option-item');
@@ -10,17 +11,37 @@ document.addEventListener('DOMContentLoaded', function() {
     [30000, 10200, 16200], // 6 месяцев
     [60000, 20400, 32400] // 12 месяцев
   ];
+  const lessonCounts = [12, 72, 144]; // Количество занятий для каждого срока
 
   optionItems.forEach((option, index) => {
     option.addEventListener('click', function() {
+      // Удаляем класс --active у всех элементов списка
+      optionItems.forEach(item => {
+        item.classList.remove('price__option-item--active');
+      });
+
+      // Добавляем класс --active только к выбранному элементу
+      option.classList.add('price__option-item--active');
+
       const priceElements = document.querySelectorAll('.price__card-price');
       const durationIndex = index; // Индекс выбранного срока абонемента
       priceElements.forEach((priceElement, cardIndex) => {
-        priceElement.textContent = cardPrices[durationIndex][cardIndex] + 'р';
+        const price = cardPrices[durationIndex][cardIndex];
+        const currencySymbol = '₽';
+        // Заменяем содержимое элемента на новую цену и добавляем символ валюты
+        priceElement.textContent = price + currencySymbol;
+        // Добавляем новое значение data-price для последующего использования
+        priceElement.dataset.price = price;
       });
+
+      // Изменяем количество занятий только у элемента с классом 'price__card-subtitle--offers'
+      const subtitleOffers = document.querySelector('.price__card-subtitle--offers');
+      const lessonCount = lessonCounts[durationIndex];
+      subtitleOffers.textContent = lessonCount + ' занятий';
     });
   });
 });
+
 
 // Swiper Jury
 Swiper.use([Navigation, Pagination]);

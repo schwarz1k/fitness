@@ -76,55 +76,57 @@
         </section>
 
         <section class="price" data-test="price">
-          <h2 class="price__title" id="price">Абонементы</h2>
-          <ul class="price__option">
-            <li class="price__option-item">
-              <p class="price__option-description">1 месяц</p>
-            </li>
-            <li class="price__option-item">
-              <p class="price__option-description">6 месяцев</p>
-            </li>
-            <li class="price__option-item">
-              <p class="price__option-description">12 месяцев</p>
-            </li>
-          </ul>
-          <ul class="price__card">
-            <li class="price__card-item">
-              <h3 class="price__card-title">С тренером</h3>
-              <p class="price__card-subtitle">12 занятий</p>
-              <p class="price__card-price">5000р</p>
-              <button class="price__card-button button">Купить абонемент</button>
-            </li>
-            <li class="price__card-item">
-              <h3 class="price__card-title">Дневной</h3>
-              <p class="price__card-subtitle">с 8:00 до 17:00</p>
-              <p class="price__card-price">1700р</p>
-              <button class="price__card-button button">Купить абонемент</button>
-            </li>
-            <li class="price__card-item">
-              <h3 class="price__card-title">Полный день</h3>
-              <p class="price__card-subtitle">с 8:00 до 22:00</p>
-              <p class="price__card-price">2700р</p>
-              <button class="price__card-button button">Купить абонемент</button>
-            </li>
-          </ul>
+          <div class="price__container">
+            <h2 class="price__title" id="price">Абонементы</h2>
+            <ul class="price__option">
+              <li class="price__option-item price__option-item--active">
+                <p class="price__option-description">1 месяц</p>
+              </li>
+              <li class="price__option-item">
+                <p class="price__option-description">6 месяцев</p>
+              </li>
+              <li class="price__option-item">
+                <p class="price__option-description">12 месяцев</p>
+              </li>
+            </ul>
+            <ul class="price__card">
+              <li class="price__card-item">
+                <h3 class="price__card-title">С тренером</h3>
+                <p class="price__card-subtitle price__card-subtitle--offers">12 занятий</p>
+                <p class="price__card-price" data-price="5000">5000<span>₽</span></p>
+                <button class="price__card-button button">Купить абонемент</button>
+              </li>
+              <li class="price__card-item">
+                <h3 class="price__card-title">Дневной</h3>
+                <p class="price__card-subtitle">с 8:00 до 17:00</p>
+                <p class="price__card-price" data-price="1700">1700<span>₽</span></p>
+                <button class="price__card-button button">Купить абонемент</button>
+              </li>
+              <li class="price__card-item">
+                <h3 class="price__card-title">Полный день</h3>
+                <p class="price__card-subtitle">с 8:00 до 22:00</p>
+                <p class="price__card-price" data-price="2700">2700<span>₽</span></p>
+                <button class="price__card-button button">Купить абонемент</button>
+              </li>
+            </ul>
+          </div>
         </section>
 
         <section class="games" data-test="games">
           <div class="games__container">
             <div class="games__date-container">
-              <h2 class="games__title">Super Games</h2>
+              <h2 class="games__title">Super <span>Games</span></h2>
               <dl class="games__list">
                 <div class="games__list-item">
                   <dt class="games__list-term">Дата</dt>
-                  <dd class="games__list-detail">7<small class="games__list-detail-reduce-text">Марта 2019</small></dd>
+                  <dd class="games__list-detail">7<small class="games__list-detail-reduce-text">Марта <span>2019</span></small></dd>
                 </div>
                 <div class="games__list-item">
                   <dt class="games__list-term games__list-term--time">Время</dt>
                   <dd class="games__list-detail games__list-detail--time">12:00</dd>
                 </div>
               </dl>
-              <p class="games__description">Ежегодные соревнования по CrossFit</p>
+              <p class="games__description">Ежегодные соревнования <span>по CrossFit</span></p>
               <button class="games__button button">Заполнить заявку</button>
             </div>
             <picture>
