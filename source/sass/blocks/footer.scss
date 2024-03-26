@@ -1,3 +1,27 @@
+.footer-container {
+
+}
+
+.footer__logo-links__container {
+  max-width: 290px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: 678px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-flow: dense;
+  }
+}
+
+.footer__logo-links {
+  padding: 40px 15px;
+}
+
+.footer__logo {
+  margin-bottom: 15px;
+}
+
 .footer__title {
   font-family: var(--second-family);
   font-weight: 600;

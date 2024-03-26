@@ -85,7 +85,6 @@ const reviewsSwiper = new Swiper('.swiper-container.reviews-swiper-container', {
   }
 });
 
-
 document.querySelectorAll('.swiper-slide').forEach(function(slide) {
   slide.addEventListener('click', function() {
     this.classList.toggle('expanded');
@@ -221,5 +220,3 @@ document.addEventListener('DOMContentLoaded', function() {
     playButton.style.display = 'none';
   });
 });
-
-

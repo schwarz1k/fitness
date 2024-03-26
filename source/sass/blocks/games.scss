@@ -56,6 +56,10 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0 0 0 49px;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+  }
 }
 
 .games__description {

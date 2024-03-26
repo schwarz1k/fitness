@@ -12,6 +12,7 @@
   @media (min-width: $desktop-width) {
     background: var(--primary-bg) url('../img/price/weights-desktop.png') no-repeat right bottom;
     background-size: auto;
+    padding-bottom: 100px;
   }
 }
 
@@ -125,6 +126,10 @@
     padding: 65px 77.5px 65px 77.5px;
     min-width: 380px;
     min-height: 460px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 360px;
   }
 }
 

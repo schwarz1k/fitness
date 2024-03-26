@@ -1,5 +1,7 @@
 .offers {
   color: $basic-blue;
+  text-align: center;
+  padding: 40px 0 40px 0;
 }
 
 .offers__title {
@@ -7,18 +9,49 @@
   font-weight: 600;
   font-size: 32px;
   line-height: 100%;
+  margin: 0 0 40px 0;
+}
+
+.offers__container {
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1160px;
+    margin: 0 auto;
+  }
 }
 
 .offers__main-wrapper {
   background-color: var(--play-btn);
   color: $basic-white;
+  padding: 30px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 278px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -20px;
+  }
 }
 
-.offers__title {
+.offers__main {
+  background-color: var(--play-btn);
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.offers__main-title {
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 22px;
   line-height: 100%;
+  margin: 0 0 8px 0;
 }
 
 .offers__subtitle {
@@ -26,6 +59,7 @@
   font-weight: 700;
   font-size: 64px;
   line-height: 100%;
+  margin: 0 0 28px 0;
 }
 
 .offers__description {
@@ -33,6 +67,12 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 125%;
+  margin: 0 0 28px 0;
+}
+
+.offers__main-img {
+  display: block;
+  margin: 0 auto;
 }
 
 .link {
@@ -56,6 +96,55 @@
   }
 }
 
+.offers__second {
+  margin: 0;
+  padding: 40px 15px 0 15px;
+  list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    max-width: 678px;
+    margin: 0 auto;
+    padding: 40px 0 0 0;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: -13px;
+  }
+}
+
+.offers__second-item {
+  padding: 20px;
+  border-width: 7px;
+  border-style: solid;
+  border-image: linear-gradient(170deg, #d10a42 17.6%, #00359f 95.31%) 1;
+
+  @media (min-width: $tablet-width) {
+    max-width: 324px;
+    height: 188px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.offers__second-item:not(:last-child) {
+  margin-right: 20px;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+  }
+}
+
+.offers__second-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 .offers__second-link {
   color: var(--btn-border);
 
@@ -70,6 +159,7 @@
   font-size: 22px;
   line-height: 100%;
   color: var(--btn-border);
+  margin: 0 0 20px 0;
 }
 
 .offers__second-subtitle {
@@ -78,4 +168,5 @@
   font-size: 14px;
   line-height: 157%;
   color: var(--btn-border);
+  margin: 0 0 20px 0;
 }
