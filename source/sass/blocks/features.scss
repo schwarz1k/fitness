@@ -1,5 +1,7 @@
 .features {
   background-color: var(--primary-bg);
+  padding-top: 37px;
+  padding-bottom: 35px;
 
   @media (min-width: $desktop-width) {
     padding: 100px 0;
@@ -32,9 +34,8 @@
   font-size: 32px;
   line-height: 100%;
   color: $basic-blue;
-  margin: 0;
+  margin: 0 0 41px 0;
   text-align: center;
-  padding-top: 40px;
 
   @media (max-width: $desktop-width) {
     padding: 0;
@@ -63,11 +64,11 @@
 }
 
 .features__list-item:not(:last-child) {
-  margin-bottom: 35px;
+  margin-bottom: 34px;
 }
 
 .features__list-item-title {
-  font-family: var(--second-family);
+  font-family: var(--font-family);
   font-weight: 700;
   font-size: 64px;
   line-height: 100%;
@@ -108,15 +109,20 @@
   line-height: 157%;
   color: $basic-blue;
   margin: 0;
+  padding: 0 45px;
+
+  span {
+    display: block;
+  }
 }
 
 .features__center-content {
   font-size: 24px;
   font-weight: 700;
   color: $basic-white;
-  padding: 30px 15px 40px;
+  padding: 37px 15px 38px;
   max-width: 320px;
-  margin: 0 auto;
+  margin: 0 auto 0 auto;
   min-height: 225px;
 }
 
@@ -124,8 +130,8 @@
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 64px;
-  line-height: 100%;
-  margin: 0;
+  line-height: 79%;
+  margin: 0 0 6px 0;
 
   span {
     font-size: 22px;
@@ -139,6 +145,10 @@
   font-size: 14px;
   line-height: 157%;
   margin: 0;
+
+  span {
+    display: block;
+  }
 }
 
 .features__list-item--cars {
@@ -161,6 +171,10 @@
   @media (min-width: $desktop-width) {
     grid-column: 3;
   }
+}
+
+.features__list-item-description--cars {
+  margin-bottom: 4px;
 }
 
 .features__list-item-description-container {
@@ -222,6 +236,8 @@
 }
 
 .features__list-item--comfort {
+  padding-top: 42px;
+
   @media (min-width: $tablet-width) {
     grid-column: span 2;
   }

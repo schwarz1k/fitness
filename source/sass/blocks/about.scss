@@ -20,7 +20,7 @@
 }
 
 .about__wrapper {
-  padding: 39px 15px 25px;
+  padding: 42px 15px 25px;
 
   @media (min-width: $tablet-width) {
     text-align: center;
@@ -56,10 +56,9 @@
 .about__subtitle {
   font-family: var(--font-family);
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 111%;
-  margin: 0 0 39px;
-  letter-spacing: 0.01em;
+  margin: 0 0 35px;
 
   @media (min-width: $tablet-width) {
     font-size: 1.28em;
@@ -79,7 +78,6 @@
   font-size: 14px;
   line-height: 157%;
   margin: 0;
-  letter-spacing: -0.07em;
 
   span {
     display: block;

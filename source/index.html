@@ -14,9 +14,11 @@
       <header class="page-header" data-test="hero">
         <div class="page-header__holder">
           <div class="page-header__wrapper">
-            <svg class="page-header__logo logo" width="100" height="20" role="img"  aria-label="Логотип фитнес центра SUPERGYM">
-              <use href="/__spritemap#sprite-logo"></use>
-            </svg>
+            <div class="page-header__logo-wrapper">
+              <svg class="page-header__logo logo" width="100" height="20" role="img"  aria-label="Логотип фитнес центра SUPERGYM">
+                <use href="/__spritemap#sprite-logo"></use>
+              </svg>
+            </div>
             <a class="page-header__phone" href="tel:88005555555">8 800 555-55-55</a>
           </div>
           <h1 class="page-header__title visually-hidden">Фитнес центр SUPERGYM</h1>
@@ -115,7 +117,9 @@
         <section class="games" data-test="games">
           <div class="games__container">
             <div class="games__date-container">
-              <h2 class="games__title">Super <span>Games</span></h2>
+              <div class="games__date-title-wrapper">
+                <h2 class="games__title">Super <span>Games</span></h2>
+              </div>
               <dl class="games__list">
                 <div class="games__list-item">
                   <dt class="games__list-term">Дата</dt>
@@ -145,7 +149,7 @@
                   <div class="swiper-slide">
                     <picture>
                       <source type="image/webp" media="(min-width: 768px)" srcset="img/jury/jury-anna@1x.webp, img/jury/jury-anna@2x.webp 2x" width="260" height="300">
-                      <img class="swiper__img" src="img/jury/jury-anna@1x.webp" width="227" height="280" srcset="img/jury/jury-anna@2x.webp 2x" alt="Анна Павлова">
+                      <img class="swiper__img swiper__img-jury" src="img/jury/jury-anna@1x.webp" width="227" height="280" srcset="img/jury/jury-anna@2x.webp 2x" alt="Анна Павлова">
                     </picture>
                     <div class="swiper-slide__info">
                       <p class="swiper-slide__info-name">Анна Павлова</p>
@@ -173,7 +177,7 @@
                   <div class="swiper-slide">
                     <picture>
                       <source type="image/webp" media="(min-width: 768px)" srcset="img/jury/jury-alexey@2x.webp, img/jury/jury-alexey@2x.webp 2x" width="260" height="300">
-                      <img class="swiper__img" src="img/jury/jury-alexey@1x.webp" width="227" height="280" srcset="img/jury/jury-alexey@2x.webp 2x" alt="Алексей Лавров">
+                      <img class="swiper__img swiper__img-jury" src="img/jury/jury-alexey@1x.webp" width="227" height="280" srcset="img/jury/jury-alexey@2x.webp 2x" alt="Алексей Лавров">
                     </picture>
                     <div class="swiper-slide__info">
                       <p class="swiper-slide__info-name">Алексей Лавров</p>
@@ -201,7 +205,7 @@
                   <div class="swiper-slide">
                     <picture>
                       <source type="image/webp" media="(min-width: 768px)" srcset="img/jury/jury-alexandr@1x.webp, img/jury/jury-alexandr@2x.webp 2x" width="260" height="300">
-                      <img class="swiper__img" src="img/jury/jury-alexandr@1x.webp" width="227" height="280" srcset="img/jury/jury-alexandr@2x.webp 2x" alt="Александр Пашков">
+                      <img class="swiper__img swiper__img-jury" src="img/jury/jury-alexandr@1x.webp" width="227" height="280" srcset="img/jury/jury-alexandr@2x.webp 2x" alt="Александр Пашков">
                     </picture>
                     <div class="swiper-slide__info">
                       <p class="swiper-slide__info-name">Александр Пашков</p>
@@ -229,7 +233,7 @@
                   <div class="swiper-slide">
                     <picture>
                       <source type="image/webp" media="(min-width: 768px)" srcset="img/jury/jury-mary@1x.webp, img/jury/jury-mary@2x.webp 2x" width="260" height="300">
-                      <img class="swiper__img" src="img/jury/jury-mary@1x.webp" width="227" height="280" srcset="img/jury/jury-mary@2x.webp 2x" alt="Мария Кетова">
+                      <img class="swiper__img swiper__img-jury" src="img/jury/jury-mary@1x.webp" width="227" height="280" srcset="img/jury/jury-mary@2x.webp 2x" alt="Мария Кетова">
                     </picture>
                     <div class="swiper-slide__info">
                       <p class="swiper-slide__info-name">Мария Кетова</p>
@@ -381,7 +385,7 @@
               <p class="features__list-item-title">900 <span>кв/м</span></p>
               <div class="features__list-item-description-container">
                 <h3 class="features__list-item-subtitle">Площадь</h3>
-                <p class="features__list-item-description features__list-item-description--square">Занимайтесь без очередей <span>и толкучки</span></p>
+                <p class="features__list-item-description features__list-item-description--square">Занимайтесь без очередей и толкучки</p>
               </div>
             </div>
             <div class="features__list-item features__list-item--cars">
@@ -394,14 +398,14 @@
             <div class="features__center-block">
               <div class="features__center-content">
                 <h3 class="features__center-title">100 <span>Тренажёров</span></h3>
-                <p class="features__center-subtitle">Современные тренажёры на все группы мышц</p>
+                <p class="features__center-subtitle">Современные тренажёры <span>на все группы мышц</span></p>
               </div>
             </div>
               <div class="features__list-item features__list-item--comfort">
                 <p class="features__list-item-title">350 <span>мест</span></p>
                 <div class="features__list-item-description-container">
                   <h3 class="features__list-item-subtitle">Комфорт</h3>
-                  <p class="features__list-item-description features__list-item-description--comfort">Просторные раздевалки, <span>душевые, фен, Wi-Fi, кулеры</span></p>
+                  <p class="features__list-item-description features__list-item-description--comfort">Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
                 </div>
               </div>
               <div class="features__list-item features__list-item--years">
@@ -421,8 +425,10 @@
               <div class="offers__main-wrapper">
                 <h3 class="offers__main-title">Год</h3>
                 <p class="offers__subtitle">4999</p>
-                <p class="offers__description">Безлимитный абонемент в тренажёрный зал</p>
-                <a class="offers__link link" href="#">Подробнее</a>
+                <p class="offers__description">Безлимитный абонемент <span>в тренажёрный зал</span></p>
+                <div class="offers__link-container">
+                  <a class="offers__link link" href="#">Подробнее</a>
+                </div>
               </div>
               <picture>
                 <source type="image/webp" media="(min-width: 1366px)" srcset="img/offers/offers-gril-desktop@1x.webp, img/offers/offers-gril-desktop@2x.webp 2x" width="280" height="460">
@@ -433,7 +439,7 @@
             <ul class="offers__second">
               <li class="offers__second-item">
                 <h3 class="offers__second-title">Месяц бесплатно</h3>
-                <p class="offers__second-subtitle">Приведи друга, получи абонемент в подарок</p>
+                <p class="offers__second-subtitle">Приведи друга, получи абонемент <span>в подарок</span></p>
                 <a class="offers__second-link link" href="#">Подробнее</a>
               </li>
               <li class="offers__second-item">
@@ -467,18 +473,18 @@
                 <div class="faq__accordion faq__accordion--active" id="center">
                   <details class="faq__question">
                     <summary>Как стать членом <span>фитнес-центра?</span></summary>
-                    <p class="faq__answer">При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также  заполняется онлайн и договор придёт вам на почту.</p>
+                    <p class="faq__answer">При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета <span>также  заполняется онлайн и договор придёт вам на почту.</span></p>
                   </details>
                   <details class="faq__question">
                     <summary>Где можно посмотреть расписание?</summary>
                     <p class="faq__answer">Наше расписание всегда доступно на нашем сайте в разделе "Расписание". Также вы можете получить информацию о расписании, обратившись к администратору нашего центра.</p>
                   </details>
                   <details class="faq__question">
-                    <summary>Есть кулеры в центре? Предоставляются полотенца?</summary>
+                    <summary>Есть кулеры в центре? <span>Предоставляются</span> полотенца?</summary>
                     <p class="faq__answer">Да, у нас есть кулеры с прохладной водой, чтобы вы могли остаться гидратированными во время тренировки. Полотенца также предоставляются для вашего удобства.</p>
                   </details>
                   <details class="faq__question">
-                    <summary>Сколько тренеров работает в клубе и какова <span>их квалификация?</span></summary>
+                    <summary>Сколько тренеров работает <span></span>в клубе и какова <span>их квалификация?</span></summary>
                     <p class="faq__answer">В нашем клубе работает команда опытных и профессиональных тренеров, специализирующихся в различных областях фитнеса и здорового образа жизни. Каждый из наших тренеров имеет соответствующие сертификаты и квалификацию для обеспечения вас качественным обучением и поддержкой.</p>
                   </details>
                 </div>
@@ -553,7 +559,7 @@
                   </picture>
                   <div class="reviews-slider__container">
                     <h3 class="reviews__slider-title">Анна Орлова</h3>
-                    <p class="reviews__slider-description">«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                    <p class="reviews__slider-description">«Хожу в Supergym уже больше <span> года. Нравится, что в клубе <span>всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время <span>нет очередей»</span></span></span></p>
                   </div>
                 </div>
               </div>

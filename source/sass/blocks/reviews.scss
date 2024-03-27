@@ -9,6 +9,7 @@
   font-size: 32px;
   line-height: 100%;
   margin: 0 0 40px;
+  color: $basic-blue;
 }
 
 .reviews-swiper-container {
@@ -27,13 +28,13 @@
 .reviews__img {
   min-height: 0;
   object-fit: contain;
-  margin-bottom: 10px;
+  margin-bottom: 2px;
 }
 
 .reviews-slider {
   background-color: var(--btn-border);
   color: $basic-white;
-  padding: 28px 15px;
+  padding: 30px 15px 28px 15px;
   min-height: 328px;
 
   @media (width <= 767px) {
@@ -67,8 +68,8 @@
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 18px;
-  line-height: 111%;
-  margin: 0 0 16px;
+  line-height: 157%;
+  margin: 0 0 13px;
 }
 
 .reviews__slider-description {
@@ -77,4 +78,8 @@
   font-size: 14px;
   line-height: 157%;
   margin: 0;
+
+  span {
+    display: block;
+  }
 }

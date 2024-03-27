@@ -19,9 +19,8 @@
 
 .page-header__wrapper {
   display: grid;
-  align-items: start;
-  grid-auto-flow: column;
-  padding: 16px 15px;
+  grid-template-columns: auto auto;
+  padding: 16px 15px 6px 15px;
   min-height: 52px;
 
   @media (min-width: $tablet-width) {
@@ -36,7 +35,7 @@
 }
 
 .page-header__container {
-  padding: 0 16px 32px;
+  padding: 0 16px 30px 16px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -53,6 +52,7 @@
   width: 100px;
   height: 20px;
   object-fit: fill;
+  margin-bottom: 10px;
 
   @media (min-width: $tablet-width) {
     width: 110px;
@@ -68,11 +68,13 @@
 .page-header__phone {
   grid-column: 2;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 100%;
   color: $basic-white;
   text-decoration: none;
   text-align: right;
+  min-width: 149px;
+  margin-bottom: 10px;
 
   @media (min-width: $tablet-width) {
     font-size: 22px;
@@ -86,7 +88,7 @@
 }
 
 .page-header__info {
-  padding-top: 50px;
+  padding-top: 47px;
 
   @media (min-width: $tablet-width) {
     max-width: 324px;
@@ -103,7 +105,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-auto-flow: dense;
-  margin-bottom: 49px;
+  margin-bottom: 47px;
   min-height: 169px;
 
   @media (min-width: $tablet-width) {
@@ -117,8 +119,8 @@
 
 .page-header__advantages {
   font-weight: 400;
-  font-size: 0.91em;
-  line-height: 152%;
+  font-size: 14px;
+  line-height: 143%;
   margin-top: auto;
   text-align: right;
   margin-right: auto;
@@ -185,7 +187,7 @@
 }
 
 .page-header__buy-button {
-  font-size: 10px;
+  font-size: 12px;
   display: block;
   margin: 0 auto;
 

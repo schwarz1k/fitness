@@ -1,7 +1,7 @@
 .offers {
   color: $basic-blue;
   text-align: center;
-  padding: 40px 0;
+  padding: 45px 0 40px 0;
 }
 
 .offers__title {
@@ -24,7 +24,7 @@
 .offers__main-wrapper {
   background-color: var(--play-btn);
   color: $basic-white;
-  padding: 30px;
+  padding: 30px 30px 24px 30px;
 
   @media (min-width: $tablet-width) {
     max-width: 278px;
@@ -66,12 +66,21 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 125%;
-  margin: 0 0 28px;
+  margin: 0 0 29px;
+
+  span {
+    display: block;
+  }
 }
 
 .offers__main-img {
   display: block;
   margin: 0 auto;
+}
+
+.offers__link {
+  display: inline-block;
+  margin-bottom: 10px;
 }
 
 .link {
@@ -115,7 +124,7 @@
 }
 
 .offers__second-item {
-  padding: 20px;
+  padding: 22px;
   border-width: 7px;
   border-style: solid;
   border-image: linear-gradient(170deg, #d10a42 17.6%, #00359f 95.31%) 1;
@@ -168,4 +177,8 @@
   line-height: 157%;
   color: var(--btn-border);
   margin: 0 0 20px;
+
+  span {
+    display: block;
+  }
 }

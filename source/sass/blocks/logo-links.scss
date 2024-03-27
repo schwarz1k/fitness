@@ -1,6 +1,6 @@
 .logo-links {
   background-color: var(--dark);
-  padding: 40px 15px;
+  padding: 39.5px 15px 39.5px 15px;
 }
 
 .logo-links__container {
@@ -41,8 +41,16 @@
   }
 }
 
-.logo-links__text-links-item:not(:last-child) {
-  margin-right: 30px;
+.logo-links__text-links-item:nth-child(2) {
+  margin-left: -21px;
+}
+
+.logo-links__text-links-item:nth-child(3) {
+  margin-left: -8px;
+}
+
+.logo-links__text-links-item:nth-child(5) {
+  margin-left: -10px;
 }
 
 .logo-links__image-links {
@@ -58,7 +66,7 @@
 }
 
 .logo-links__logo-holder {
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 

@@ -46,7 +46,8 @@
   padding: 0;
   list-style-type: none;
   display: grid;
-  gap: 10px;
+  column-gap: 10px;
+  row-gap: 10px;
   grid-template-columns: repeat(2, 1fr);
 
   @media (min-width: $tablet-width) {
@@ -60,7 +61,7 @@
 }
 
 .faq__tabs-item {
-  padding: 15px 23px;
+  padding: 14px 23px;
   color: $basic-blue;
   border: 1px solid #102654;
 }
@@ -85,8 +86,15 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 100%;
-  padding: 21px 0;
+  padding: 20px 0;
   border-top: 1px solid var(--divider);
+}
+
+.faq__question summary {
+
+  span {
+    display: block;
+  }
 }
 
 .faq__question:last-child {
@@ -179,4 +187,8 @@
   font-size: 16px;
   line-height: 125%;
   margin: 0;
+
+  span {
+    display: block;
+  }
 }

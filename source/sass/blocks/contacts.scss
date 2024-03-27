@@ -3,7 +3,7 @@
 }
 
 .contacts__wrapper {
-  padding: 40px 15px;
+  padding: 37px 15px 40px 15px;
   max-width: 320px;
   margin: 0 auto;
 
@@ -13,7 +13,7 @@
 }
 
 .contacts__title {
-  margin: 0 0 42px;
+  margin: 0 0 37px;
   font-family: var(--second-family);
   font-weight: 600;
   font-size: 32px;
@@ -56,7 +56,7 @@
 }
 
 .contacts__list-item:not(:last-child) {
-  margin-bottom: 12px;
+  margin-bottom: 27px;
 }
 
 .contacts__label {
@@ -64,7 +64,7 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 100%;
-  margin: 0 0 12px;
+  margin: 0 0 13px;
 }
 
 .contacts__info {

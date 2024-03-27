@@ -1,7 +1,7 @@
 .form-holder {
   background-color: $basic-blue;
   color: $basic-white;
-  padding: 70px 15px;
+  padding: 70px 15px 58px 15px;
 }
 
 .form__container {
@@ -26,7 +26,7 @@
   font-weight: 600;
   font-size: 32px;
   line-height: 100%;
-  margin: 0 0 36px;
+  margin: 0 0 40px;
 
   @media (min-width: $tablet-width) {
     text-align: center;
@@ -38,7 +38,7 @@
 }
 
 .form__input-control {
-  margin-bottom: 36px;
+  margin-bottom: 39px;
 }
 
 .input-control__input {
@@ -53,6 +53,8 @@
 }
 
 .form__submit-btn {
+  margin-bottom: 10px;
+
   @media (min-width: $tablet-width) {
     width: 100%;
   }

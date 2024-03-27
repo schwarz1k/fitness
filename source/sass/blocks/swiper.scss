@@ -3,7 +3,7 @@
 }
 
 .swiper__holder {
-  padding: 40px 46.5px;
+  padding: 40px 46.5px 40px 46.5px;
 
   @media (min-width: $tablet-width) {
     text-align: center;
@@ -33,6 +33,7 @@
   line-height: 100%;
   text-transform: none;
   text-align: center;
+  margin: 0 0 19px 0;
 
   @media (min-width: $desktop-width) {
     text-align: left;
@@ -59,6 +60,11 @@
 
 .swiper__img {
   min-height: 280px;
+}
+
+.swiper__img-jury {
+  object-fit: cover;
+  display: block;
 }
 
 @media (width >= 768px) and (width <= 1365px) {
@@ -158,8 +164,8 @@
 
 .swiper__slide-caption {
   position: absolute;
-  bottom: 40px;
-  left: 120px;
+  bottom: 2px;
+  left: 114px;
   transform: translateX(-50%);
   font-family: var(--font-family);
   font-weight: 400;
