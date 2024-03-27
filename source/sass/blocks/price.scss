@@ -4,13 +4,13 @@
   padding: 40px 15px;
 
   @media (min-width: $tablet-width) {
-    background: var(--primary-bg) url('../img/price/weights-tablet.png') no-repeat right bottom;
+    background: var(--primary-bg) url("../img/price/weights-tablet.png") no-repeat right bottom;
     background-size: auto;
     padding: 4px 15px;
   }
 
   @media (min-width: $desktop-width) {
-    background: var(--primary-bg) url('../img/price/weights-desktop.png') no-repeat right bottom;
+    background: var(--primary-bg) url("../img/price/weights-desktop.png") no-repeat right bottom;
     background-size: auto;
     padding-bottom: 100px;
   }
@@ -37,11 +37,11 @@
   line-height: 100%;
   text-transform: none;
   text-align: center;
-  margin: 0 0 29px 0;
+  margin: 0 0 29px;
 
   @media (min-width: $tablet-width) {
     font-size: 42px;
-    margin: 0 0 36px 0;
+    margin: 0 0 36px;
   }
 }
 
@@ -51,16 +51,16 @@
   font-size: 1.05em;
   line-height: 100%;
   list-style-type: none;
-  margin: 0 0 30px 0;
+  margin: 0 0 30px;
   padding: 0;
   display: flex;
   justify-content: space-between;
   position: relative;
-  border-bottom: 1px solid #78787833;
+  border-bottom: 1px solid #787878;
 
   @media (min-width: $tablet-width) {
     max-width: 310px;
-    margin: 0 auto 45px auto;
+    margin: 0 auto 45px;
     font-size: 1.15em;
   }
 
@@ -79,7 +79,7 @@
 }
 
 .price__option-item::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -1px;
   left: 0;
@@ -119,11 +119,11 @@
   min-height: 414px;
   margin: 0 auto;
   text-align: center;
-  padding: 51px 47.5px 50px 47.5px;
+  padding: 51px 47.5px 50px;
   background-color: $basic-white;
 
   @media (min-width: $tablet-width) {
-    padding: 65px 77.5px 65px 77.5px;
+    padding: 65px 77.5px;
     min-width: 380px;
     min-height: 460px;
   }
@@ -139,12 +139,12 @@
   font-weight: 700;
   font-size: 1.5em;
   line-height: 100%;
-  margin: 0 0 21px 0;
+  margin: 0 0 21px;
   letter-spacing: -0.07em;
 
   @media (min-width: $tablet-width) {
     font-size: 1.65em;
-    margin: 0 0 25px 0;
+    margin: 0 0 25px;
   }
 }
 
@@ -153,11 +153,11 @@
   font-weight: 300;
   font-size: 0.91em;
   line-height: 157%;
-  margin: 0 0 87px 0;
+  margin: 0 0 87px;
 
   @media (min-width: $tablet-width) {
     font-size: 1em;
-    margin: 0 0 83px 0;
+    margin: 0 0 83px;
   }
 }
 
@@ -168,7 +168,7 @@
   line-height: 150%;
   text-align: center;
   color: var(--price);
-  margin: 0 0 27px 0;
+  margin: 0 0 27px;
   z-index: 1;
   position: relative;
   letter-spacing: -0.05em;
@@ -193,10 +193,8 @@
   color: #e8e8e8;
   top: 5px;
   left: 50%;
-  -webkit-transform: translate(-50%);
-  -ms-transform: translate(-50%);
   transform: translate(-50%);
-  opacity: .48;
+  opacity: 0.48;
   font-weight: 700;
   z-index: -1;
 }
@@ -206,7 +204,7 @@
   width: 195px;
   height: 66px;
   font-family: var(--font-family);
-  font-size: 0.70em;
+  font-size: 0.7em;
   line-height: 100%;
   color: $basic-blue;
 }

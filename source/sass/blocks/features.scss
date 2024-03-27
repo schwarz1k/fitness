@@ -2,7 +2,7 @@
   background-color: var(--primary-bg);
 
   @media (min-width: $desktop-width) {
-    padding: 100px 0 100px 0;
+    padding: 100px 0;
   }
 }
 
@@ -73,9 +73,8 @@
   line-height: 100%;
   background: linear-gradient(137deg, #d10a42 32%, #0041ca 45%);
   background-clip: text;
-  -webkit-background-clip: text;
   color: transparent;
-  margin: 0 0 12px 0;
+  margin: 0 0 12px;
 
   span {
     font-family: var(--font-family);
@@ -99,7 +98,7 @@
   font-size: 18px;
   line-height: 111%;
   color: $basic-blue;
-  margin: 0 0 12px 0;
+  margin: 0 0 12px;
 }
 
 .features__list-item-description {
@@ -113,9 +112,9 @@
 
 .features__center-content {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 700;
   color: $basic-white;
-  padding: 30px 15px 40px 15px;
+  padding: 30px 15px 40px;
   max-width: 320px;
   margin: 0 auto;
   min-height: 225px;
@@ -143,21 +142,28 @@
 }
 
 .features__list-item--cars {
-
   @media (min-width: $tablet-width) {
     margin-left: 44px;
+    grid-column: span 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 3;
   }
 }
 
 .features__list-item--years {
-
   @media (min-width: $tablet-width) {
     margin-left: 44px;
+    grid-column: span 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 3;
   }
 }
 
 .features__list-item-description-container {
-
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
@@ -166,7 +172,6 @@
 }
 
 .features__list-item-description--square {
-
   span {
     @media (min-width: $tablet-width) {
       display: block;
@@ -175,7 +180,6 @@
 }
 
 .features__list-item-description--comfort {
-
   span {
     @media (min-width: $tablet-width) {
       display: block;
@@ -183,8 +187,7 @@
   }
 }
 
-.features__list-item-description--years{
-
+.features__list-item-description--years {
   span {
     @media (min-width: $tablet-width) {
       display: block;
@@ -209,29 +212,16 @@
 }
 
 .features__list-item--square {
-
   @media (min-width: $tablet-width) {
     grid-column: span 2;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 1;
-  }
-}
-
-.features__list-item--cars {
-
-  @media (min-width: $tablet-width) {
-    grid-column: span 2;
-  }
-
-  @media (min-width: $desktop-width) {
-    grid-column: 3;
   }
 }
 
 .features__list-item--comfort {
-
   @media (min-width: $tablet-width) {
     grid-column: span 2;
   }
@@ -240,15 +230,3 @@
     grid-column: 1;
   }
 }
-
-.features__list-item--years {
-
-  @media (min-width: $tablet-width) {
-    grid-column: span 2;
-  }
-
-  @media (min-width: $desktop-width) {
-    grid-column: 3;
-  }
-}
-

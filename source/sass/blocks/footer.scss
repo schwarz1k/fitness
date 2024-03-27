@@ -1,31 +1,8 @@
-.footer-container {
-
-}
-
-.footer__logo-links__container {
-  max-width: 290px;
-  margin: 0 auto;
-
-  @media (min-width: $tablet-width) {
-    max-width: 678px;
+.footer__container {
+  @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-flow: dense;
+    grid-template-columns: repeat(2, 683px);
+    margin: 0 auto;
+    max-width: 1366px;
   }
-}
-
-.footer__logo-links {
-  padding: 40px 15px;
-}
-
-.footer__logo {
-  margin-bottom: 15px;
-}
-
-.footer__title {
-  font-family: var(--second-family);
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 100%;
-  color: $basic-blue;
 }

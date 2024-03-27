@@ -1,5 +1,18 @@
 .logo-links {
   background-color: var(--dark);
+  padding: 40px 15px;
+}
+
+.logo-links__container {
+  max-width: 290px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: 678px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-flow: dense;
+  }
 }
 
 .logo-links__link {
@@ -28,7 +41,7 @@
   }
 }
 
-.logo-links__text-links__item:not(:last-child) {
+.logo-links__text-links-item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -42,11 +55,12 @@
 
 .logo-links__logo {
   margin-bottom: 15px;
-
-  @media (min-width: $tablet-width) {
-
-  }
 }
+
+.logo-links__logo-holder {
+  margin-bottom: 15px;
+}
+
 
 .logo-links__social {
   background-color: $basic-white;
@@ -58,26 +72,16 @@
   align-items: center;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
   }
 }
 
-.logo-links__social {
-
-  &::after {
-    &:hover {
-
-    }
-  }
-}
-
 .logo-links__social--vk {
-
   &::after {
     width: 13px;
     height: 8px;
-    background-image: url('../img/sprite/icon-vk.svg');
+    background-image: url("../img/sprite/icon-vk.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -85,11 +89,10 @@
 }
 
 .logo-links__social--ok {
-
   &::after {
     width: 10px;
     height: 17px;
-    background-image: url('../img/sprite/icon-ok.svg');
+    background-image: url("../img/sprite/icon-ok.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -97,11 +100,10 @@
 }
 
 .logo-links__social--reddit {
-
   &::after {
     width: 15px;
     height: 15px;
-    background-image: url('../img/sprite/icon-reddit.svg');
+    background-image: url("../img/sprite/icon-reddit.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

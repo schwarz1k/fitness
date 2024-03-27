@@ -1,6 +1,24 @@
-.form {
+.form-holder {
   background-color: $basic-blue;
   color: $basic-white;
+  padding: 70px 15px;
+}
+
+.form__container {
+  max-width: 290px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: 440px;
+  }
+}
+
+.form__wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 205px 205px;
+    gap: 30px;
+  }
 }
 
 .form__title {
@@ -8,4 +26,34 @@
   font-weight: 600;
   font-size: 32px;
   line-height: 100%;
+  margin: 0 0 36px;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
+.form__input-control {
+  margin-bottom: 36px;
+}
+
+.input-control__input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--divider);
+  width: 100%;
+  color: $basic-white;
+  padding-bottom: 5px;
+  padding-left: 0;
+  outline: 0;
+}
+
+.form__submit-btn {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }

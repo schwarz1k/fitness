@@ -50,7 +50,7 @@
 .swiper-slide {
   position: relative;
 
-  @media (max-width: 767px) {
+  @media (width <= 767px) {
     &:nth-child(3) {
       order: -1;
     }
@@ -59,7 +59,6 @@
 
 .swiper__img {
   min-height: 280px;
-  object-fit: none;
 }
 
 @media (width >= 768px) and (width <= 1365px) {
@@ -97,7 +96,7 @@
   font-weight: 400;
   font-size: 22px;
   line-height: 100%;
-  margin: 45px 0 8px 0;
+  margin: 45px 0 8px;
 }
 
 .swiper-slide__info-description {
@@ -106,13 +105,13 @@
   font-size: 16px;
   line-height: 150%;
   color: #b6bdcc;
-  margin: 0 auto 33px auto;
+  margin: 0 auto 33px;
   max-width: 140px;
 }
 
 .swiper-slide__info-list {
   margin: 0;
-  padding: 0 0 0 0;
+  padding: 0;
   list-style-type: none;
   text-align: left;
 }
@@ -180,7 +179,7 @@
 }
 
 .swiper-button-prev,
- .swiper-button-next {
+.swiper-button-next {
   position: absolute;
   top: 50%;
   width: 16px;
@@ -191,7 +190,7 @@
 }
 
 .swiper-button-prev {
-  background-image: url('/__spritemap#sprite-arrow');
+  background-image: url("../__spritemap#sprite-arrow");
   left: calc(50% - 330px);
 
   @media (min-width: $desktop-width) {
@@ -201,7 +200,7 @@
 
 .swiper-button-next {
   right: calc(50% - 330px);
-  background-image: url('/__spritemap#sprite');
+  background-image: url("../__spritemap#sprite-arrow");
   transform: scaleX(-1);
 
   @media (min-width: $desktop-width) {

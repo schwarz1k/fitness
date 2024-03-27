@@ -20,16 +20,16 @@
 }
 
 .about__wrapper {
-  padding: 39px 15px 25px 15px;
+  padding: 39px 15px 25px;
 
   @media (min-width: $tablet-width) {
     text-align: center;
-    padding: 64px 45px 25px 45px;
+    padding: 64px 45px 25px;
   }
 
   @media (min-width: $desktop-width) {
     text-align: left;
-    padding: 0 0 34px 0;
+    padding: 0 0 34px;
   }
 }
 
@@ -40,7 +40,7 @@
   line-height: 100%;
   color: $basic-blue;
   text-transform: none;
-  margin: 0 0 13px 0;
+  margin: 0 0 13px;
 
   @media (min-width: $tablet-width) {
     font-size: 42px;
@@ -58,7 +58,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 111%;
-  margin: 0 0 39px 0;
+  margin: 0 0 39px;
   letter-spacing: 0.01em;
 
   @media (min-width: $tablet-width) {
@@ -108,7 +108,7 @@
 }
 
 .about__description--additional {
-    display: none;
+  display: none;
 
   @media (min-width: $desktop-width) {
     display: inherit;
@@ -164,13 +164,10 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   z-index: 1;
   cursor: pointer;
-  background: url('../img/sprite/player-button.svg') no-repeat center;
+  background: url("../img/sprite/player-button.svg") no-repeat center;
   background-size: cover;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   border: 0;
   width: 72px;

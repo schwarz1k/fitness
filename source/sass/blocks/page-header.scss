@@ -1,5 +1,5 @@
 .page-header {
-  background: linear-gradient(90deg, #1c3477 0%, #1c3477 0.01%, #1a3578 39.11%, #73184b 75.5%, #b4022a 100%);;
+  background: linear-gradient(90deg, #1c3477 0%, #1c3477 0.01%, #1a3578 39.11%, #73184b 75.5%, #b4022a 100%);
   color: $basic-white;
   min-height: 412px;
 }
@@ -36,16 +36,16 @@
 }
 
 .page-header__container {
-  padding: 0 16px 32px 16px;
+  padding: 0 16px 32px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    padding: 0 45px 100px 45px;
+    padding: 0 45px 100px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 175px 120px 175px;
+    padding: 0 175px 120px;
   }
 }
 
@@ -150,7 +150,7 @@
   font-weight: 600;
   font-size: 32px;
   line-height: 100%;
-  margin: 0 0 15px 0;
+  margin: 0 0 15px;
 
   @media (min-width: $tablet-width) {
     font-size: 42px;
@@ -187,7 +187,7 @@
 .page-header__buy-button {
   font-size: 10px;
   display: block;
-  margin: 0 auto 0 auto;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     width: 185px;
@@ -213,5 +213,4 @@
     display: block;
   }
 }
-
 

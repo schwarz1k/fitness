@@ -14,7 +14,7 @@
       <header class="page-header" data-test="hero">
         <div class="page-header__holder">
           <div class="page-header__wrapper">
-            <svg class="page-header__logo logo" width="100" height="20" role="img" alt="Логотип фитнес центра SUPERGYM">
+            <svg class="page-header__logo logo" width="100" height="20" role="img"  aria-label="Логотип фитнес центра SUPERGYM">
               <use href="/__spritemap#sprite-logo"></use>
             </svg>
             <a class="page-header__phone" href="tel:88005555555">8 800 555-55-55</a>
@@ -33,7 +33,7 @@
                   <p class="page-header__location-fitness">Фитнес центр</p>
                 </div>
               </div>
-              <button class="page-header__buy-button button">Купить абонемент</button>
+              <button class="page-header__buy-button button" type="button">Купить абонемент</button>
             </div>
             <picture>
               <source type="image/webp" media="(min-width: 1366px)" srcset="img/header/hero-desktop@1x.webp, img/header/hero-desktop@2x.webp 2x" width="500" height="524">
@@ -68,7 +68,7 @@
                     <source type="image/webp" media="(min-width: 768px)" srcset="img/gym/gym-2-tablet@1x.webp, img/gym/gym-2-tablet@2x.webp 2x" width="270" height="170">
                     <img class="about__img about__img--player" src="img/gym/gym-2-mobile@1x.webp" width="320" height="170" srcset="img/gym/gym-2-mobile@2x.webp 2x" alt="Тренажерный зал">
                   </picture>
-                  <button class="about__play-button"></button>
+                  <button class="about__play-button" type="button"><span class="visually-hidden">Запуск видео</span></button>
                 </div>
               </div>
             </div>
@@ -94,19 +94,19 @@
                 <h3 class="price__card-title">С тренером</h3>
                 <p class="price__card-subtitle price__card-subtitle--offers">12 занятий</p>
                 <p class="price__card-price" data-price="5000">5000<span>₽</span></p>
-                <button class="price__card-button button">Купить абонемент</button>
+                <button class="price__card-button button" type="button">Купить абонемент</button>
               </li>
               <li class="price__card-item">
                 <h3 class="price__card-title">Дневной</h3>
                 <p class="price__card-subtitle">с 8:00 до 17:00</p>
                 <p class="price__card-price" data-price="1700">1700<span>₽</span></p>
-                <button class="price__card-button button">Купить абонемент</button>
+                <button class="price__card-button button" type="button">Купить абонемент</button>
               </li>
               <li class="price__card-item">
                 <h3 class="price__card-title">Полный день</h3>
                 <p class="price__card-subtitle">с 8:00 до 22:00</p>
                 <p class="price__card-price" data-price="2700">2700<span>₽</span></p>
-                <button class="price__card-button button">Купить абонемент</button>
+                <button class="price__card-button button" type="button">Купить абонемент</button>
               </li>
             </ul>
           </div>
@@ -127,7 +127,7 @@
                 </div>
               </dl>
               <p class="games__description">Ежегодные соревнования <span>по CrossFit</span></p>
-              <button class="games__button button">Заполнить заявку</button>
+              <button class="games__button button" type="button">Заполнить заявку</button>
             </div>
             <picture>
               <source type="image/webp" media="(min-width: 1366px)" srcset="img/games/games-desktop@1x.webp, img/games/games-desktop@2x.webp 2x" width="660" height="500">
@@ -446,204 +446,222 @@
         </section>
 
         <section class="faq" data-test="faq">
-          <h2 class="faq__title" id="faq">Вопросы и ответы</h2>
-          <div class="faq__tabs">
-            <h3 class="faq__tab faq__tab--active" data-target="center">Центр</h3>
-            <h3 class="faq__tab" data-target="abonement">Абонемент</h3>
-            <h3 class="faq__tab" data-target="services">Услуги</h3>
-            <h3 class="faq__tab" data-target="rules">Правила</h3>
-          </div>
-          <div class="faq__content">
-            <div class="faq__accordion faq__accordion--active" id="center">
-              <details class="faq__question">
-                <summary>Как стать членом фитнес-центра?</summary>
-                <p class="faq__answer">При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также  заполняется онлайн и договор придёт вам на почту.</p>
-              </details>
-              <details class="faq__question">
-                <summary>Где можно посмотреть расписание?</summary>
-                <p class="faq__answer">Наше расписание всегда доступно на нашем сайте в разделе "Расписание". Также вы можете получить информацию о расписании, обратившись к администратору нашего центра.</p>
-              </details>
-              <details class="faq__question">
-                <summary>Есть кулеры в центре? Предоставляются полотенца?</summary>
-                <p class="faq__answer">Да, у нас есть кулеры с прохладной водой, чтобы вы могли остаться гидратированными во время тренировки. Полотенца также предоставляются для вашего удобства.</p>
-              </details>
-              <details class="faq__question">
-                <summary>Сколько тренеров работает в клубе и какова их квалификация?</summary>
-                <p class="faq__answer">В нашем клубе работает команда опытных и профессиональных тренеров, специализирующихся в различных областях фитнеса и здорового образа жизни. Каждый из наших тренеров имеет соответствующие сертификаты и квалификацию для обеспечения вас качественным обучением и поддержкой.</p>
-              </details>
-            </div>
-            <div class="faq__accordion" id="abonement">
-              <details class="faq__question">
-                <summary>Занятия с тренером входят в абонемент?</summary>
-                <p class="faq__answer">При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос,  получить небольшую консультацию по тренажеру или технике выполнения упражнения.</p>
-              </details>
-              <details class="faq__question">
-                <summary>Можно ли заморозить абонемент?</summary>
-                <p class="faq__answer">К сожалению, мы не предоставляем услугу заморозки абонемента. Однако, мы всегда готовы обсудить ваши индивидуальные потребности и найти решение, которое будет удобным для вас.</p>
-              </details>
-              <details class="faq__question">
-                <summary>Есть ли лимит по посещениям тренажерного зала и групповых занятий?</summary>
-                <p class="faq__answer">Наш центр не устанавливает жёстких лимитов на количество посещений. Мы поддерживаем свободный график для наших участников, чтобы они могли заниматься в удобное для них время и частоту.</p>
-              </details>
-              <details class="faq__question">
-                <summary>Что такое семейный доступ и доступ для друзей?</summary>
-                <p class="faq__answer">Семейный доступ дает возможность членам одной семьи заниматься в нашем центре по выгодным тарифам. Доступ для друзей предоставляет возможность приглашать друзей для совместной тренировки по специальным условиям.</p>
-              </details>
-            </div>
-            <div class="faq__accordion" id="services">
-              <details class="faq__question">
-                <summary>Предлагает ли клуб услуги по консультированию по вопросам питания?</summary>
-                <p class="faq__answer">Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели и предложит программу питания.</p>
-              </details>
-              <details class="faq__question">
-                <summary>Проводятся ли в клубе какие-либо мероприятия или соревнования?</summary>
-                <p class="faq__answer">Да, мы регулярно организуем различные мероприятия и соревнования для наших участников. Следите за новостями нашего центра, чтобы быть в курсе предстоящих событий.</p>
-              </details>
-              <details class="faq__question">
-                <summary>Можно ли приобрести в центре спортивное питание?</summary>
-                <p class="faq__answer">Да, у нас есть широкий выбор спортивного питания и дополнительных продуктов, которые помогут вам достичь ваших фитнес-целей. Обратитесь к нашим сотрудникам, чтобы получить рекомендации и консультацию.</p>
-              </details>
-              <details class="faq__question">
-                <summary>Есть ли в центре детская комната?</summary>
-                <p class="faq__answer">На данный момент мы не предоставляем услуги детской комнаты. Однако, мы всегда стараемся сделать наш центр максимально комфортным для всех наших участников, включая семьи с детьми.</p>
-              </details>
-            </div>
-            <div class="faq__accordion" id="rules">
-              <details class="faq__question">
-                <summary>Есть в фитнес-центре дресс-код?</summary>
-                <p class="faq__answer">Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес).</p>
-              </details>
-              <details class="faq__question">
-                <summary>Можно ли приводить с собой детей на тренировки?</summary>
-                <p class="faq__answer">Да, наши участники имеют право приводить с собой детей на тренировки. Однако, мы рекомендуем обеспечить детей подходящими условиями и следить за их поведением в зале.</p>
-              </details>
-              <details class="faq__question">
-                <summary>Какие дополнительные правила посещения центра?</summary>
-                <p class="faq__answer">В дополнение к общим правилам тренировок, мы рекомендуем нашим участникам соблюдать чистоту и порядок в зале, быть внимательными к другим участникам и следовать инструкциям персонала.</p>
-              </details>
-              <details class="faq__question">
-                <summary>Нужна ли медицинская справка для посещения залов и бассейна?</summary>
-                <p class="faq__answer">Для посещения наших залов и бассейна медицинская справка не требуется. Однако, перед началом занятий рекомендуется проконсультироваться с вашим врачом, особенно если у вас есть какие-либо медицинские противопоказания или ограничения.</p>
-              </details>
+          <div class="faq__container">
+            <h2 class="faq__title" id="faq">Вопросы и ответы</h2>
+            <div class="faq__wrapper">
+              <ul class="faq__tabs">
+                <li class="faq__tabs-item faq__tabs-item--active" data-target="center">
+                  <h3 class="faq__tab">Центр</h3>
+                </li>
+                <li class="faq__tabs-item" data-target="abonement">
+                  <h3 class="faq__tab">Абонемент</h3>
+                </li>
+                <li class="faq__tabs-item" data-target="services">
+                  <h3 class="faq__tab">Услуги</h3>
+                </li>
+                <li class="faq__tabs-item" data-target="rules">
+                  <h3 class="faq__tab">Правила</h3>
+                </li>
+              </ul>
+              <div class="faq__content">
+                <div class="faq__accordion faq__accordion--active" id="center">
+                  <details class="faq__question">
+                    <summary>Как стать членом <span>фитнес-центра?</span></summary>
+                    <p class="faq__answer">При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также  заполняется онлайн и договор придёт вам на почту.</p>
+                  </details>
+                  <details class="faq__question">
+                    <summary>Где можно посмотреть расписание?</summary>
+                    <p class="faq__answer">Наше расписание всегда доступно на нашем сайте в разделе "Расписание". Также вы можете получить информацию о расписании, обратившись к администратору нашего центра.</p>
+                  </details>
+                  <details class="faq__question">
+                    <summary>Есть кулеры в центре? Предоставляются полотенца?</summary>
+                    <p class="faq__answer">Да, у нас есть кулеры с прохладной водой, чтобы вы могли остаться гидратированными во время тренировки. Полотенца также предоставляются для вашего удобства.</p>
+                  </details>
+                  <details class="faq__question">
+                    <summary>Сколько тренеров работает в клубе и какова <span>их квалификация?</span></summary>
+                    <p class="faq__answer">В нашем клубе работает команда опытных и профессиональных тренеров, специализирующихся в различных областях фитнеса и здорового образа жизни. Каждый из наших тренеров имеет соответствующие сертификаты и квалификацию для обеспечения вас качественным обучением и поддержкой.</p>
+                  </details>
+                </div>
+                <div class="faq__accordion" id="abonement">
+                  <details class="faq__question">
+                    <summary>Занятия с тренером входят в абонемент?</summary>
+                    <p class="faq__answer">При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос,  получить небольшую консультацию по тренажеру или технике выполнения упражнения.</p>
+                  </details>
+                  <details class="faq__question">
+                    <summary>Можно ли заморозить абонемент?</summary>
+                    <p class="faq__answer">К сожалению, мы не предоставляем услугу заморозки абонемента. Однако, мы всегда готовы обсудить ваши индивидуальные потребности и найти решение, которое будет удобным для вас.</p>
+                  </details>
+                  <details class="faq__question">
+                    <summary>Есть ли лимит по посещениям тренажерного зала и групповых занятий?</summary>
+                    <p class="faq__answer">Наш центр не устанавливает жёстких лимитов на количество посещений. Мы поддерживаем свободный график для наших участников, чтобы они могли заниматься в удобное для них время и частоту.</p>
+                  </details>
+                  <details class="faq__question">
+                    <summary>Что такое семейный доступ и доступ для друзей?</summary>
+                    <p class="faq__answer">Семейный доступ дает возможность членам одной семьи заниматься в нашем центре по выгодным тарифам. Доступ для друзей предоставляет возможность приглашать друзей для совместной тренировки по специальным условиям.</p>
+                  </details>
+                </div>
+                <div class="faq__accordion" id="services">
+                  <details class="faq__question">
+                    <summary>Предлагает ли клуб услуги по консультированию по вопросам питания?</summary>
+                    <p class="faq__answer">Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели и предложит программу питания.</p>
+                  </details>
+                  <details class="faq__question">
+                    <summary>Проводятся ли в клубе какие-либо мероприятия или соревнования?</summary>
+                    <p class="faq__answer">Да, мы регулярно организуем различные мероприятия и соревнования для наших участников. Следите за новостями нашего центра, чтобы быть в курсе предстоящих событий.</p>
+                  </details>
+                  <details class="faq__question">
+                    <summary>Можно ли приобрести в центре спортивное питание?</summary>
+                    <p class="faq__answer">Да, у нас есть широкий выбор спортивного питания и дополнительных продуктов, которые помогут вам достичь ваших фитнес-целей. Обратитесь к нашим сотрудникам, чтобы получить рекомендации и консультацию.</p>
+                  </details>
+                  <details class="faq__question">
+                    <summary>Есть ли в центре детская комната?</summary>
+                    <p class="faq__answer">На данный момент мы не предоставляем услуги детской комнаты. Однако, мы всегда стараемся сделать наш центр максимально комфортным для всех наших участников, включая семьи с детьми.</p>
+                  </details>
+                </div>
+                <div class="faq__accordion" id="rules">
+                  <details class="faq__question">
+                    <summary>Есть в фитнес-центре дресс-код?</summary>
+                    <p class="faq__answer">Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес).</p>
+                  </details>
+                  <details class="faq__question">
+                    <summary>Можно ли приводить с собой детей на тренировки?</summary>
+                    <p class="faq__answer">Да, наши участники имеют право приводить с собой детей на тренировки. Однако, мы рекомендуем обеспечить детей подходящими условиями и следить за их поведением в зале.</p>
+                  </details>
+                  <details class="faq__question">
+                    <summary>Какие дополнительные правила посещения центра?</summary>
+                    <p class="faq__answer">В дополнение к общим правилам тренировок, мы рекомендуем нашим участникам соблюдать чистоту и порядок в зале, быть внимательными к другим участникам и следовать инструкциям персонала.</p>
+                  </details>
+                  <details class="faq__question">
+                    <summary>Нужна ли медицинская справка для посещения залов и бассейна?</summary>
+                    <p class="faq__answer">Для посещения наших залов и бассейна медицинская справка не требуется. Однако, перед началом занятий рекомендуется проконсультироваться с вашим врачом, особенно если у вас есть какие-либо медицинские противопоказания или ограничения.</p>
+                  </details>
+                </div>
+              </div>
             </div>
           </div>
         </section>
 
-        <section class="reviews swiper" data-test="reviews">
+        <section class="reviews" data-test="reviews">
           <h2 class="reviews__title">Отзывы</h2>
           <div class="reviews-swiper-container swiper-container">
             <div class="reviews-wrapper swiper-wrapper">
               <div class="reviews-slider swiper-slide">
-                <picture>
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/reviews/reviews-tablet@1x.webp, img/reviews/reviews-tablet@2x.webp 2x" width="80" height="80">
-                  <img class="swiper__img" src="img/reviews/reviews-mobile@1x.webp" width="68" height="68" srcset="img/reviews/reviews-mobile@2x.webp 2x" alt="Анна Орлова">
-                </picture>
-                <h3 class="reviews__slider-title">Анна Орлова</h3>
-                <p class="reviews__slider-description">«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                <div class="reviews-slider__holder">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/reviews/reviews-tablet@1x.webp, img/reviews/reviews-tablet@2x.webp 2x" width="80" height="80">
+                    <img class="reviews__img" src="img/reviews/reviews-mobile@1x.webp" width="68" height="68" srcset="img/reviews/reviews-mobile@2x.webp 2x" alt="Анна Орлова">
+                  </picture>
+                  <div class="reviews-slider__container">
+                    <h3 class="reviews__slider-title">Анна Орлова</h3>
+                    <p class="reviews__slider-description">«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                  </div>
+                </div>
               </div>
               <div class="reviews-slider swiper-slide">
-                <picture>
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/reviews/reviews-tablet@1x.webp, img/reviews/reviews-tablet@2x.webp 2x" width="80" height="80">
-                  <img class="swiper__img" src="img/reviews/reviews-mobile@1x.webp" width="68" height="68" srcset="img/reviews/reviews-mobile@2x.webp 2x" alt="Анна Орлова">
-                </picture>
-                <h3 class="reviews__slider-title">Лера Булкина</h3>
-                <p class="reviews__slider-description">«Supergym стал моим вторым домом уже больше года. Я оцениваю здесь всё: от чистоты и свежести воздуха до дружелюбного персонала и обновляемых тренажёров. Просторный зал позволяет комфортно тренироваться в любое время дня, даже вечером, когда обычно бывает больше народу. Рад, что выбрал этот клуб!»</p>
+                <div class="reviews-slider__holder">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/reviews/reviews-tablet@1x.webp, img/reviews/reviews-tablet@2x.webp 2x" width="80" height="80">
+                    <img class="reviews__img" src="img/reviews/reviews-mobile@1x.webp" width="68" height="68" srcset="img/reviews/reviews-mobile@2x.webp 2x" alt="Лера Булкина">
+                  </picture>
+                  <div class="reviews-slider__container">
+                    <h3 class="reviews__slider-title">Лера Булкина</h3>
+                    <p class="reviews__slider-description">«Supergym стал моим вторым домом уже больше года. Я оцениваю здесь всё: от чистоты и свежести воздуха до дружелюбного персонала и обновляемых тренажёров.»</p>
+                  </div>
+                </div>
               </div>
               <div class="reviews-slider swiper-slide">
-                <picture>
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/reviews/reviews-tablet@1x.webp, img/reviews/reviews-tablet@2x.webp 2x" width="80" height="80">
-                  <img class="swiper__img" src="img/reviews/reviews-mobile@1x.webp" width="68" height="68" srcset="img/reviews/reviews-mobile@2x.webp 2x" alt="Анна Орлова">
-                </picture>
-                <h3 class="reviews__slider-title">Пряна Пулкина</h3>
-                <p class="reviews__slider-description">«Мой опыт посещения Supergym длится уже год, и я ни разу не пожалел о своем выборе. Чистота, аккуратность, дружелюбный персонал и обновляемое оборудование делают мои тренировки максимально комфортными. Просторный зал и отсутствие очередей даже в пиковые часы - это то, что я ценю в этом клубе. Рекомендую!»</p>
+                <div class="reviews-slider__holder">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/reviews/reviews-tablet@1x.webp, img/reviews/reviews-tablet@2x.webp 2x" width="80" height="80">
+                    <img class="reviews__img" src="img/reviews/reviews-mobile@1x.webp" width="68" height="68" srcset="img/reviews/reviews-mobile@2x.webp 2x" alt="Пряна Пулкина">
+                  </picture>
+                  <div class="reviews-slider__container">
+                    <h3 class="reviews__slider-title">Пряна Пулкина</h3>
+                    <p class="reviews__slider-description">«Мой опыт посещения Supergym длится уже год, и я ни разу не пожалел о своем выборе. Чистота, аккуратность, дружелюбный персонал.»</p>
+                  </div>
+                </div>
               </div>
             </div>
+            <div class="reviews-swiper-pagination swiper-pagination"></div>
             <div class="reviews-swiper-button-prev swiper-button-prev"></div>
             <div class="reviews-swiper-button-next swiper-button-next"></div>
           </div>
         </section>
 
-        <section class="form" data-test="form">
-          <form class="form__container" id="form" action="https://echo.htmlacademy.ru/" method="POST">
-            <h2 class="form__title">Бесплатное занятие</h2>
-            <div class="form__input-control input-control">
-              <label class="input-control__label" for="name">Имя</label>
-              <input class="input-control__input" id="name" name="name" type="text">
-              <div class="input-control__error error"></div>
-            </div>
-            <div class="form__input-control input-control">
-              <label class="input-control__label" for="phone">Телефон</label>
-              <input class="input-control__input" id="phone" name="phone" type="tel">
-              <div class="input-control__error error"></div>
-            </div>
-            <button class="form__submit-btn button" type="submit">Отправить</button>
-          </form>
-        </section>
-
       </main>
 
-      <footer class="footer" data-test="footer">
+      <footer class="footer form contacts logo" data-test="footer">
         <div class="footer__container">
-          <h2 class="footer__title">Контакты</h2>
-          <ul class="footer__contacts contacts">
-            <li class="contacts__address">
-              <p class="contacts__label">Адрес:</p>
-              <address class="contacts__info">г. Омск, ул. 60 лет Октября, 7</address>
-            </li>
-            <li class="contacts__schedule">
-              <p class="contacts__label">График работы:</p>
-              <p class="contacts__info">Пн-Вс: с 8:00 до 22:00</p>
-            </li>
-            <li class="contacts__phone">
-              <p class="contacts__label">Телефон:</p>
-              <a class="contacts__info" href="tel:8 800 555-55-55">8 800 555-55-55</a>
-            </li>
-            <li class="contacts__email">
-              <p class="contacts__label">Email:</p>
-              <a class="contacts__info" href="mailto:oмск@supergym.r">oмск@supergym.ru</a>
-            </li>
-          </ul>
+          <div class="form form-holder" data-test="form">
+            <form class="form__container" id="form" action="https://echo.htmlacademy.ru/" method="POST">
+              <h2 class="form__title">Бесплатное занятие</h2>
+              <div class="form__wrapper">
+                <div class="form__input-control input-control">
+                  <label class="input-control__label visually-hidden" for="name">Имя</label>
+                  <input class="input-control__input" id="name" name="name" type="text" placeholder="Имя">
+                  <div class="input-control__error error"></div>
+                </div>
+                <div class="form__input-control input-control">
+                  <label class="input-control__label visually-hidden" for="phone">Телефон</label>
+                  <input class="input-control__input" id="phone" name="phone" type="tel" placeholder="Телефон">
+                  <div class="input-control__error error"></div>
+                </div>
+              </div>
+              <button class="form__submit-btn button" type="submit">Отправить</button>
+            </form>
+          </div>
+          <div class="contacts contacts-container">
+            <div class="contacts__wrapper">
+              <h2 class="contacts__title">Контакты</h2>
+              <ul class="contacts__list">
+                <li class="contacts__list-item contacts__address">
+                  <p class="contacts__label">Адрес:</p>
+                  <address class="contacts__info">г. Омск, ул. 60 лет Октября, 7</address>
+                </li>
+                <li class="contacts__list-item contacts__list-item--schedule">
+                  <p class="contacts__label">График работы:</p>
+                  <p class="contacts__info">Пн-Вс: с 8:00 до 22:00</p>
+                </li>
+                <li class="contacts__list-item contacts__list-item--phone">
+                  <p class="contacts__label">Телефон:</p>
+                  <a class="contacts__info" href="tel:88005555555">8 800 555-55-55</a>
+                </li>
+                <li class="contacts__list-item contacts__list-item--email">
+                  <p class="contacts__label">Email:</p>
+                  <a class="contacts__info" href="mailto:oмск@supergym.r">oмск@supergym.ru</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="footer__logo-links logo-links">
-          <div class="footer__logo-links__container">
-            <div class="logo-links__logo">
-              <svg class="footer__logo logo" width="100" height="20" role="img" alt="Логотип фитнес центра SUPERGYM">
+        <div class="logo logo-links">
+          <div class="logo-links__container">
+            <div class="logo-links__logo-holder">
+              <svg class="logo-links__logo logo" width="100" height="20" role="img" aria-label="Логотип фитнес центра SUPERGYM">
                 <use href="/__spritemap#sprite-logo"></use>
               </svg>
             </div>
             <ul class="logo-links__text-links">
-              <li class="logo-links__text-links__item">
+              <li class="logo-links__text-links-item">
                 <a class="logo-links__link" href="#faq">Услуги</a>
               </li>
-              <li class="logo-links__text-links__item">
+              <li class="logo-links__text-links-item">
                 <a class="logo-links__link" href="#price">Абонементы</a>
               </li>
-              <li class="logo-links__text-links__item">
+              <li class="logo-links__text-links-item">
                 <a class="logo-links__link" href="#offers">Акции</a>
               </li>
-              <li class="logo-links__text-links__item">
+              <li class="logo-links__text-links-item">
                 <a class="logo-links__link" href="#juri">Тренеры</a>
               </li>
-              <li class="logo-links__text-links__item">
+              <li class="logo-links__text-links-item">
                 <a class="logo-links__link" href="#faq">Расписание</a>
               </li>
             </ul>
             <div class="logo-links__image-links">
-              <a class="logo-links__social logo-links__social--vk" href="https://www.youtube.com/" target="_blank">
-                <!--              <svg class="logo-link__icon" width="13" height="8" role="img" alt="Логотип фитнес центра SUPERGYM">-->
-                <!--                <use href="/__spritemap#sprite-icon-vk"></use>-->
-                <!--              </svg>-->
-              </a>
-              <a class="logo-links__social logo-links__social--ok" href="https://www.google.ru/" target="_blank">
-                <!--              <svg class="logo-link__icon" width="10" height="17" role="img" alt="Логотип фитнес центра SUPERGYM">-->
-                <!--                <use href="/__spritemap#sprite-icon-ok"></use>-->
-                <!--              </svg>-->
-              </a>
-              <a class="logo-links__social logo-links__social--reddit" href="https://mail.ru/" target="_blank">
-                <!--              <svg class="logo-link__icon" width="15" height="15" role="img" alt="Логотип фитнес центра SUPERGYM">-->
-                <!--                <use href="/__spritemap#sprite-icon-reddit"></use>-->
-                <!--              </svg>-->
-              </a>
+              <a class="logo-links__social logo-links__social--vk" href="https://www.youtube.com/" target="_blank" rel="noreferrer noopener"></a>
+              <a class="logo-links__social logo-links__social--ok" href="https://www.google.ru/" target="_blank" rel="noreferrer noopener"></a>
+              <a class="logo-links__social logo-links__social--reddit" href="https://mail.ru/" target="_blank" rel="noreferrer noopener"></a>
             </div>
           </div>
         </div>
