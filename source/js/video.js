@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const playButton = document.querySelector('.about__play-button');
+  const buttonHolder = document.querySelector('.about__play-button-holder');
+  const buttonStart = document.querySelector('.about__play-button-start');
 
   playButton.addEventListener('click', () => {
     const videoContainer = document.querySelector('.about__video-container');
@@ -28,5 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     videoContainer.appendChild(iframe);
     playButton.style.display = 'none';
+    buttonHolder.style.display = 'none';
+    buttonStart.style.display = 'none';
   });
 });

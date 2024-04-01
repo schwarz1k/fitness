@@ -1,7 +1,12 @@
 .offers {
   color: $basic-blue;
   text-align: center;
-  padding: 45px 0 40px 0;
+  padding: 44px 0 41px 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 38px;
+    padding-bottom: 30px;
+  }
 }
 
 .offers__title {
@@ -10,6 +15,11 @@
   font-size: 32px;
   line-height: 100%;
   margin: 0 0 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 42px;
+    margin-bottom: 34px;
+  }
 }
 
 .offers__container {
@@ -24,10 +34,18 @@
 .offers__main-wrapper {
   background-color: var(--play-btn);
   color: $basic-white;
-  padding: 30px 30px 24px 30px;
+  padding: 30px 30px 10px 30px;
+  min-height: 271px;
 
   @media (min-width: $tablet-width) {
     max-width: 278px;
+    min-width: 278px;
+    text-align: left;
+    padding-left: 26px;
+    padding-top: 38px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
   }
 
   @media (min-width: $desktop-width) {
@@ -51,6 +69,11 @@
   font-size: 22px;
   line-height: 100%;
   margin: 0 0 8px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    margin-bottom: 21px;
+  }
 }
 
 .offers__subtitle {
@@ -59,6 +82,11 @@
   font-size: 64px;
   line-height: 100%;
   margin: 0 0 28px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 70px;
+    margin-bottom: 42px;
+  }
 }
 
 .offers__description {
@@ -66,10 +94,15 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 125%;
-  margin: 0 0 29px;
+  margin: 0 0 19px;
 
   span {
     display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 133%;
   }
 }
 
@@ -78,30 +111,44 @@
   margin: 0 auto;
 }
 
-.offers__link {
-  display: inline-block;
-  margin-bottom: 10px;
+.offers__link-container {
+  @media (min-width: $tablet-width) {
+    margin-top: auto;
+    margin-bottom: 25px;
+  }
 }
 
-.link {
-  font-family: var(--font-family);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 100%;
-  text-transform: uppercase;
-  color: $basic-white;
-  text-decoration: none;
-  position: relative;
+.offers__link {
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 2px;
+  margin-bottom: 10px;
 
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: -3px;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: $basic-white;
+  &:hover {
+    opacity: 0.8;
   }
+
+  &:focus {
+    opacity: 1;
+    outline: 1px solid $basic-white;
+    padding: 10px;
+
+    &::before {
+      background-color: transparent;
+    }
+  }
+
+  &:active {
+    opacity: 1;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+  }
+}
+
+.offers__link.disabled {
+  opacity: 0.5;
 }
 
 .offers__second {
@@ -114,7 +161,7 @@
     justify-content: space-between;
     max-width: 678px;
     margin: 0 auto;
-    padding: 40px 0 0;
+    padding: 35px 0 0;
     flex-wrap: wrap;
   }
 
@@ -133,6 +180,8 @@
     max-width: 324px;
     height: 188px;
     text-align: left;
+    min-width: 324px;
+    padding: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -156,6 +205,24 @@
 .offers__second-link {
   color: var(--btn-border);
 
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    opacity: 1;
+    outline: 1px solid $basic-blue;
+    padding: 10px;
+
+    &::before {
+      background-color: transparent;
+    }
+  }
+
+  &:active {
+    opacity: 1;
+  }
+
   &::before {
     background-color: var(--divider);
   }
@@ -168,6 +235,12 @@
   line-height: 100%;
   color: var(--btn-border);
   margin: 0 0 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 26px;
+    line-height: 100%;
+    margin-bottom: 9px;
+  }
 }
 
 .offers__second-subtitle {
@@ -180,5 +253,12 @@
 
   span {
     display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 150%;
+    min-height: 48px;
+    margin-bottom: 31px;
   }
 }

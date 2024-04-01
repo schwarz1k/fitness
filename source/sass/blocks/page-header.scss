@@ -24,7 +24,7 @@
   min-height: 52px;
 
   @media (min-width: $tablet-width) {
-    padding: 30px 45px;
+    padding: 30px 45px 19px 45px;
   }
 
   @media (min-width: $desktop-width) {
@@ -75,15 +75,34 @@
   text-align: right;
   min-width: 149px;
   margin-bottom: 10px;
+  max-width: 149px;
+  margin-left: auto;
+  background: 0;
+  border: 0;
+
+  &:hover {
+    color: rgba(28, 51, 116, 0.5);
+  }
+
+  &:focus {
+    color: var(--btn-border);
+  }
+
+  &:active {
+    color: $basic-blue;
+    border-bottom: 1px solid $basic-blue;
+  }
 
   @media (min-width: $tablet-width) {
-    font-size: 22px;
+    font-size: 24px;
+    max-width: 162px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 24px;
     line-height: 100%;
     padding-top: 3px;
+    max-width: 176px;
   }
 }
 
@@ -131,7 +150,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     line-height: 157%;
   }
 
@@ -156,6 +175,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 42px;
+    margin: 0 0 9px;
   }
 
   @media (min-width: $desktop-width) {
@@ -177,6 +197,7 @@
   @media (min-width: $tablet-width) {
     font-size: 72px;
     line-height: 118%;
+    letter-spacing: 0.03em;
   }
 
   @media (min-width: $desktop-width) {

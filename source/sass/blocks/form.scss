@@ -1,7 +1,12 @@
 .form-holder {
   background-color: $basic-blue;
   color: $basic-white;
-  padding: 70px 15px 58px 15px;
+  padding: 70px 15px 60px 15px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 58px;
+    padding-bottom: 51px;
+  }
 }
 
 .form__container {
@@ -14,6 +19,7 @@
 }
 
 .form__wrapper {
+  margin-left: -4px;
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 205px 205px;
@@ -26,9 +32,10 @@
   font-weight: 600;
   font-size: 32px;
   line-height: 100%;
-  margin: 0 0 40px;
+  margin: 0 0 35px;
 
   @media (min-width: $tablet-width) {
+    font-size: 54px;
     text-align: center;
   }
 
@@ -38,24 +45,15 @@
 }
 
 .form__input-control {
-  margin-bottom: 39px;
+  margin-bottom: 35px;
 }
 
-.input-control__input {
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid var(--divider);
-  width: 100%;
-  color: $basic-white;
-  padding-bottom: 5px;
-  padding-left: 0;
-  outline: 0;
-}
 
 .form__submit-btn {
   margin-bottom: 10px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
+    min-height: 66px;
   }
 }

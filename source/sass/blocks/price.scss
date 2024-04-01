@@ -1,12 +1,12 @@
 .price {
   color: $basic-blue;
   background-color: var(--primary-bg);
-  padding: 42px 15px;
+  padding: 42px 15px 42px 15px;
 
   @media (min-width: $tablet-width) {
     background: var(--primary-bg) url("../img/price/weights-tablet.png") no-repeat right bottom;
     background-size: auto;
-    padding: 4px 15px;
+    padding: 62px 15px 60px 15px;
   }
 
   @media (min-width: $desktop-width) {
@@ -57,12 +57,12 @@
   flex-wrap: wrap;
   justify-content: space-between;
   position: relative;
-  border-bottom: 1px solid #787878;
+  border-bottom: 1px solid rgba(120, 120, 120, 0.2);
 
   @media (min-width: $tablet-width) {
     max-width: 310px;
     margin: 0 auto 45px;
-    font-size: 1.15em;
+    font-size: 18px;
   }
 
   @media (min-width: $desktop-width) {
@@ -72,10 +72,10 @@
 
 .price__option-item {
   position: relative;
-  padding-bottom: 18px;
+  padding-bottom: 17px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 8px;
+    padding-bottom: 6px;
   }
 }
 
@@ -96,6 +96,49 @@
   margin: 0;
   cursor: pointer;
   max-width: 80px;
+  opacity: 0.5;
+
+  &:hover {
+    color: rgba(16, 38, 84, 0.7);
+    opacity: 1;
+  }
+
+  &:focus {
+    color: $basic-blue;
+    opacity: 1;
+  }
+  &:active {
+    color: $basic-blue;
+    opacity: 1;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: none;
+  }
+}
+
+.price__option-item--active .price__option-description {
+  opacity: 1;
+}
+
+.price__option-item.disabled {
+  color: $basic-blue;
+  opacity: 0.5;
+}
+
+.price__option-item.price__option-item--active {
+  color: $basic-blue;
+  opacity: 1;
+}
+
+.price__option-item.disabled.price__option-item--active {
+  color: $basic-blue;
+  opacity: 1;
+}
+
+.price__option-item.disabled.price__option-item--active::before {
+  background-color: #d10a42;
+  opacity: 1;
 }
 
 .price__card {
@@ -121,12 +164,20 @@
   min-height: 414px;
   margin: 0 auto;
   text-align: center;
-  padding: 51px 47.5px 50px;
+  padding: 44px 40.5px 43px;
   background-color: $basic-white;
+  border: 7px solid transparent;
+
+  &:hover,
+  &:focus {
+    border: 7px solid;
+    border-image: linear-gradient(127deg, #d10a42 17.6%, #00359f 95.31%) 1;
+  }
 
   @media (min-width: $tablet-width) {
-    padding: 65px 77.5px;
+    padding: 60px 77px 58px 77px;
     min-width: 380px;
+    max-width: 380px;
     min-height: 460px;
   }
 
@@ -144,8 +195,8 @@
   margin: 0 0 17px;
 
   @media (min-width: $tablet-width) {
-    font-size: 1.65em;
-    margin: 0 0 25px;
+    font-size: 24px;
+    margin: 0 0 20px;
   }
 }
 
@@ -154,11 +205,11 @@
   font-weight: 300;
   font-size: 14px;
   line-height: 157%;
-  margin: 0 0 87px;
+  margin: 0 0 85px;
 
   @media (min-width: $tablet-width) {
-    font-size: 1em;
-    margin: 0 0 83px;
+    font-size: 16px;
+    margin: 0 0 80px;
   }
 }
 
@@ -176,13 +227,17 @@
   span {
     color: $basic-blue;
     padding-left: 9px;
-    font-size: 1.05em;
+    font-size: 50px;
     margin-right: -4px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 60px;
+    }
   }
 
   @media (min-width: $tablet-width) {
-    font-size: 4.3em;
-    letter-spacing: -0.05em;
+    font-size: 60px;
+    margin: 0 0 21px;
   }
 }
 
@@ -198,6 +253,11 @@
   opacity: 0.48;
   font-weight: 700;
   z-index: -1;
+
+  @media (min-width: $tablet-width) {
+    font-size: 100px;
+    top: 16px;
+  }
 }
 
 .price__card-button {
@@ -208,6 +268,11 @@
   font-size: 12px;
   line-height: 100%;
   color: $basic-blue;
+
+  @media (min-width: $tablet-width) {
+    min-width: 250px;
+    margin-left: -20px;
+  }
 }
 
 .price__card-button:not(:last-child) {

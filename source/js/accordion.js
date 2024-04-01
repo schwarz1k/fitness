@@ -16,22 +16,26 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   tabs.forEach((tab) => {
-    tab.addEventListener('click', function () {
-      const target = this.getAttribute('data-target');
+    const button = tab.querySelector('button');
+    button.addEventListener('click', function () {
+      const target = this.parentElement.getAttribute('data-target');
       const targetAccordion = document.getElementById(target);
 
-      tabs.forEach((tabItem) => tabItem.classList.remove('faq__tabs-item--active'));
+      tabs.forEach((tabItem) => tabItem.querySelector('button').classList.remove('faq__tab--active'));
       accordions.forEach((accordion) => {
         accordion.style.display = 'none';
         accordion.classList.remove('faq__accordion--active');
       });
 
-      this.classList.add('faq__tabs-item--active');
+      this.classList.add('faq__tab--active');
       targetAccordion.style.display = 'block';
       targetAccordion.classList.add('faq__accordion--active');
     });
   });
 
+
   const detailsElements = document.querySelectorAll('details');
 
+  detailsElements.forEach((details) => details.addEventListener('toggle', function () {
+  }));
 });

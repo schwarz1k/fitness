@@ -1,7 +1,12 @@
 .features {
   background-color: var(--primary-bg);
-  padding-top: 37px;
+  padding-top: 38px;
   padding-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 56px;
+    padding-bottom: 0;
+  }
 
   @media (min-width: $desktop-width) {
     padding: 100px 0;
@@ -34,10 +39,15 @@
   font-size: 32px;
   line-height: 100%;
   color: $basic-blue;
-  margin: 0 0 41px 0;
+  margin: 3px 0 41px 0;
   text-align: center;
 
-  @media (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
+    font-size: 42px;
+    margin: 5px 0 8px 0;
+  }
+
+  @media (min-width: $desktop-width) {
     padding: 0;
   }
 }
@@ -58,13 +68,14 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    max-width: 339px;
+    min-width: 339px;
     display: flex;
+    margin-left: -1px;
   }
 }
 
 .features__list-item:not(:last-child) {
-  margin-bottom: 34px;
+  margin-bottom: 36px;
 }
 
 .features__list-item-title {
@@ -75,7 +86,7 @@
   background: linear-gradient(137deg, #d10a42 32%, #0041ca 45%);
   background-clip: text;
   color: transparent;
-  margin: 0 0 12px;
+  margin: 0 0 11px;
 
   span {
     font-family: var(--font-family);
@@ -84,12 +95,18 @@
     line-height: 143%;
     color: var(--desc);
     display: block;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: -17px;
+    }
   }
 
   @media (min-width: $tablet-width) {
     text-align: left;
-    margin-top: -5px;
-    margin-right: 14px;
+    margin-top: 0;
+    margin-right: 17px;
+    font-size: 70px;
+    line-height: 100%;
   }
 }
 
@@ -100,6 +117,12 @@
   line-height: 111%;
   color: $basic-blue;
   margin: 0 0 12px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 100%;
+    margin: 0 0 10px 0;
+  }
 }
 
 .features__list-item-description {
@@ -112,7 +135,15 @@
   padding: 0 45px;
 
   span {
-    display: block;
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    padding: 0;
+    line-height: 150%;
   }
 }
 
@@ -120,10 +151,16 @@
   font-size: 24px;
   font-weight: 700;
   color: $basic-white;
-  padding: 37px 15px 38px;
+  padding: 37px 15px 35px;
   max-width: 320px;
   margin: 0 auto 0 auto;
   min-height: 225px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 37px;
+    padding-bottom: 10px;
+    margin-left: -3px;
+  }
 }
 
 .features__center-title {
@@ -136,6 +173,18 @@
   span {
     font-size: 22px;
     display: block;
+
+    @media (min-width: $tablet-width) {
+      font-size: 24px;
+      line-height: 100%;
+      margin-top: 22px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 70px;
+    line-height: 100%;
+    margin-bottom: 25px;
   }
 }
 
@@ -147,13 +196,19 @@
   margin: 0;
 
   span {
-    display: block;
+    display:
+      block;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 150%;
   }
 }
 
 .features__list-item--cars {
   @media (min-width: $tablet-width) {
-    margin-left: 44px;
+    margin-left: 13px;
     grid-column: span 2;
   }
 
@@ -162,10 +217,45 @@
   }
 }
 
+.features__list-item--cars .features__list-item-title {
+
+  span {
+
+    @media (min-width: $tablet-width) {
+      margin-top: 3px;
+      margin-left: 3px;
+    }
+  }
+}
+
+.features__list-item--years .features__list-item-title {
+
+  span {
+
+    @media (min-width: $tablet-width) {
+      margin-top: 3px;
+      margin-left: 3px;
+    }
+  }
+}
+
+.features__list-item--cars .features__list-item-subtitle {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 14px;
+  }
+}
+
+.features__list-item--years .features__list-item-subtitle {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 14px;
+  }
+}
+
 .features__list-item--years {
   @media (min-width: $tablet-width) {
-    margin-left: 44px;
+    margin-left: 13px;
     grid-column: span 2;
+    margin-top: -48px;
   }
 
   @media (min-width: $desktop-width) {
@@ -175,6 +265,10 @@
 
 .features__list-item-description--cars {
   margin-bottom: 4px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 18px;
+  }
 }
 
 .features__list-item-description-container {
@@ -202,7 +296,9 @@
 }
 
 .features__list-item-description--years {
+
   span {
+    display: block;
     @media (min-width: $tablet-width) {
       display: block;
     }
@@ -215,8 +311,14 @@
   background-color: var(--btn-border);
 
   @media (min-width: $tablet-width) {
+    margin-left: auto;
+    margin-right: auto;
     grid-column: 2 / 4;
     grid-row: 2 / 3;
+    min-height: 260px;
+    min-width: 320px;
+    max-width: 320px;
+    margin-top: -43px;
   }
 
   @media (min-width: $desktop-width) {
@@ -228,6 +330,11 @@
 .features__list-item--square {
   @media (min-width: $tablet-width) {
     grid-column: span 2;
+    margin-top: -5px;
+
+    .features__list-item-subtitle {
+      margin-top: -3px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -236,10 +343,12 @@
 }
 
 .features__list-item--comfort {
-  padding-top: 42px;
+  padding-top: 41px;
 
   @media (min-width: $tablet-width) {
     grid-column: span 2;
+    padding-top: 0;
+    margin-top: -10px;
   }
 
   @media (min-width: $desktop-width) {

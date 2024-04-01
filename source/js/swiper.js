@@ -33,6 +33,10 @@ export function initializeReviewsSwiper() {
     slidesPerView: 1,
     spaceBetween: 0,
     loop: false,
+    pagination: {
+      el: '.reviews-swiper-pagination',
+      clickable: true,
+    },
     navigation: {
       nextEl: '.reviews-swiper-button-next',
       prevEl: '.reviews-swiper-button-prev',

@@ -1,6 +1,10 @@
 .logo-links {
   background-color: var(--dark);
-  padding: 39.5px 15px 39.5px 15px;
+  padding: 40px 15px 39px 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 44px 15px 18px 15px;
+  }
 }
 
 .logo-links__container {
@@ -10,7 +14,7 @@
   @media (min-width: $tablet-width) {
     max-width: 678px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 110px 463px 105px);
     grid-auto-flow: dense;
   }
 }
@@ -22,6 +26,22 @@
   line-height: 143%;
   color: $basic-white;
   text-decoration: none;
+  border: 1px solid transparent;
+  padding: 5px;
+
+  &:hover {
+    border-bottom: 1px solid #ffffff;
+  }
+
+  &:focus {
+    border: 1px solid #ffffff;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 157%;
+    padding: 14px;
+  }
 }
 
 .logo-links__text-links {
@@ -33,24 +53,37 @@
   margin-bottom: 30px;
   grid-auto-flow: dense;
   list-style-type: none;
+  margin-left: -5px;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5, auto);
     margin-left: 20px;
     margin-right: 20px;
   }
 }
 
 .logo-links__text-links-item:nth-child(2) {
-  margin-left: -21px;
+  margin-left: -25px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+  }
 }
 
 .logo-links__text-links-item:nth-child(3) {
-  margin-left: -8px;
+  margin-left: -13px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+  }
 }
 
 .logo-links__text-links-item:nth-child(5) {
-  margin-left: -10px;
+  margin-left: -13px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+  }
 }
 
 .logo-links__image-links {
@@ -59,10 +92,19 @@
   grid-auto-flow: dense;
   column-gap: 20px;
   row-gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 15px;
+  }
 }
 
 .logo-links__logo {
   margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    width: 110px;
+    height: 22px;
+  }
 }
 
 .logo-links__logo-holder {
@@ -79,9 +121,27 @@
   justify-content: center;
   align-items: center;
 
+  &:hover {
+    background-color: var(--divider);
+  }
+
+  &:focus {
+    background-color: var(--price);
+  }
+
+  &:active {
+    background-color: $basic-blue;
+  }
+
   &::after {
     content: "";
     position: absolute;
+  }
+
+  &:hover::after,
+  &:focus::after,
+  &:active::after {
+    background-color: $basic-white;
   }
 }
 
@@ -89,10 +149,9 @@
   &::after {
     width: 13px;
     height: 8px;
-    background-image: url("../img/sprite/icon-vk.svg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    mask: url("../img/sprite/icon-vk.svg") no-repeat center;
+    mask-size: cover;
+    background-color: var(--dark);
   }
 }
 
@@ -100,10 +159,9 @@
   &::after {
     width: 10px;
     height: 17px;
-    background-image: url("../img/sprite/icon-ok.svg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    mask: url("../img/sprite/icon-ok.svg") no-repeat center;
+    mask-size: cover;
+    background-color: var(--dark);
   }
 }
 
@@ -111,9 +169,10 @@
   &::after {
     width: 15px;
     height: 15px;
-    background-image: url("../img/sprite/icon-reddit.svg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    mask: url("../img/sprite/icon-reddit.svg") no-repeat center;
+    mask-size: cover;
+    background-color: var(--dark);
   }
 }
+
+

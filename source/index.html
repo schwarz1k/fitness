@@ -19,7 +19,7 @@
                 <use href="/__spritemap#sprite-logo"></use>
               </svg>
             </div>
-            <a class="page-header__phone" href="tel:88005555555">8 800 555-55-55</a>
+            <a class="page-header__phone enabled" href="tel:88005555555">8 800 555-55-55</a>
           </div>
           <h1 class="page-header__title visually-hidden">Фитнес центр SUPERGYM</h1>
           <div class="page-header__container">
@@ -70,7 +70,9 @@
                     <source type="image/webp" media="(min-width: 768px)" srcset="img/gym/gym-2-tablet@1x.webp, img/gym/gym-2-tablet@2x.webp 2x" width="270" height="170">
                     <img class="about__img about__img--player" src="img/gym/gym-2-mobile@1x.webp" width="320" height="170" srcset="img/gym/gym-2-mobile@2x.webp 2x" alt="Тренажерный зал">
                   </picture>
-                  <button class="about__play-button" type="button"><span class="visually-hidden">Запуск видео</span></button>
+                  <button class="about__play-button" type="button" aria-label="Запуск видео"></button>
+                  <span class="about__play-button-holder enabled"></span>
+                  <span class="about__play-button-start enabled"></span>
                 </div>
               </div>
             </div>
@@ -81,14 +83,14 @@
           <div class="price__container">
             <h2 class="price__title" id="price">Абонементы</h2>
             <ul class="price__option">
-              <li class="price__option-item price__option-item--active">
-                <p class="price__option-description">1 месяц</p>
+              <li class="price__option-item price__option-item--active enabled">
+                <p class="price__option-description" tabindex="0">1 месяц</p>
               </li>
-              <li class="price__option-item">
-                <p class="price__option-description">6 месяцев</p>
+              <li class="price__option-item enabled">
+                <p class="price__option-description" tabindex="0">6 месяцев</p>
               </li>
-              <li class="price__option-item">
-                <p class="price__option-description">12 месяцев</p>
+              <li class="price__option-item enabled">
+                <p class="price__option-description" tabindex="0">12 месяцев</p>
               </li>
             </ul>
             <ul class="price__card">
@@ -96,19 +98,19 @@
                 <h3 class="price__card-title">С тренером</h3>
                 <p class="price__card-subtitle price__card-subtitle--offers">12 занятий</p>
                 <p class="price__card-price" data-price="5000">5000<span>₽</span></p>
-                <button class="price__card-button button" type="button">Купить абонемент</button>
+                <button class="price__card-button button button-secondary" type="button">Купить абонемент</button>
               </li>
               <li class="price__card-item">
                 <h3 class="price__card-title">Дневной</h3>
                 <p class="price__card-subtitle">с 8:00 до 17:00</p>
                 <p class="price__card-price" data-price="1700">1700<span>₽</span></p>
-                <button class="price__card-button button" type="button">Купить абонемент</button>
+                <button class="price__card-button button button-secondary" type="button">Купить абонемент</button>
               </li>
               <li class="price__card-item">
                 <h3 class="price__card-title">Полный день</h3>
                 <p class="price__card-subtitle">с 8:00 до 22:00</p>
                 <p class="price__card-price" data-price="2700">2700<span>₽</span></p>
-                <button class="price__card-button button" type="button">Купить абонемент</button>
+                <button class="price__card-button button button-secondary" type="button">Купить абонемент</button>
               </li>
             </ul>
           </div>
@@ -122,7 +124,7 @@
               </div>
               <dl class="games__list">
                 <div class="games__list-item">
-                  <dt class="games__list-term">Дата</dt>
+                  <dt class="games__list-term games__list-term--date">Дата</dt>
                   <dd class="games__list-detail">7<small class="games__list-detail-reduce-text">Марта <span>2019</span></small></dd>
                 </div>
                 <div class="games__list-item">
@@ -261,7 +263,7 @@
                   <div class="swiper-slide">
                     <picture>
                       <source type="image/webp" media="(min-width: 768px)" srcset="img/jury/jury-anna@1x.webp, img/jury/jury-anna@2x.webp 2x" width="260" height="300">
-                      <img class="swiper__img" src="img/jury/jury-anna@1x.webp" width="227" height="280" srcset="img/jury/jury-anna@2x.webp 2x" alt="Анна Павлова">
+                      <img class="swiper__img swiper__img-jury" src="img/jury/jury-anna@1x.webp" width="227" height="280" srcset="img/jury/jury-anna@2x.webp 2x" alt="Анна Павлова">
                     </picture>
                     <div class="swiper-slide__info">
                       <p class="swiper-slide__info-name">Анна Павлова</p>
@@ -289,7 +291,7 @@
                   <div class="swiper-slide">
                     <picture>
                       <source type="image/webp" media="(min-width: 768px)" srcset="img/jury/jury-alexey@2x.webp, img/jury/jury-alexey@2x.webp 2x" width="260" height="300">
-                      <img class="swiper__img" src="img/jury/jury-alexey@1x.webp" width="227" height="280" srcset="img/jury/jury-alexey@2x.webp 2x" alt="Алексей Лавров">
+                      <img class="swiper__img swiper__img-jury" src="img/jury/jury-alexey@1x.webp" width="227" height="280" srcset="img/jury/jury-alexey@2x.webp 2x" alt="Алексей Лавров">
                     </picture>
                     <div class="swiper-slide__info">
                       <p class="swiper-slide__info-name">Алексей Лавров</p>
@@ -317,7 +319,7 @@
                   <div class="swiper-slide">
                     <picture>
                       <source type="image/webp" media="(min-width: 768px)" srcset="img/jury/jury-alexandr@1x.webp, img/jury/jury-alexandr@2x.webp 2x" width="260" height="300">
-                      <img class="swiper__img" src="img/jury/jury-alexandr@1x.webp" width="227" height="280" srcset="img/jury/jury-alexandr@2x.webp 2x" alt="Александр Пашков">
+                      <img class="swiper__img swiper__img-jury" src="img/jury/jury-alexandr@1x.webp" width="227" height="280" srcset="img/jury/jury-alexandr@2x.webp 2x" alt="Александр Пашков">
                     </picture>
                     <div class="swiper-slide__info">
                       <p class="swiper-slide__info-name">Александр Пашков</p>
@@ -345,7 +347,7 @@
                   <div class="swiper-slide">
                     <picture>
                       <source type="image/webp" media="(min-width: 768px)" srcset="img/jury/jury-mary@1x.webp, img/jury/jury-mary@2x.webp 2x" width="260" height="300">
-                      <img class="swiper__img" src="img/jury/jury-mary@1x.webp" width="227" height="280" srcset="img/jury/jury-mary@2x.webp 2x" alt="Мария Кетова">
+                      <img class="swiper__img swiper__img-jury" src="img/jury/jury-mary@1x.webp" width="227" height="280" srcset="img/jury/jury-mary@2x.webp 2x" alt="Мария Кетова">
                     </picture>
                     <div class="swiper-slide__info">
                       <p class="swiper-slide__info-name">Мария Кетова</p>
@@ -373,34 +375,38 @@
                 </div>
               </div>
               <div class="swiper-pagination jury-swiper-pagination"></div>
-              <div class="swiper-button-prev jury-swiper-button-prev"></div>
-              <div class="swiper-button-next jury-swiper-button-next"></div>
+              <div class="swiper-button-prev jury-swiper-button-prev">
+                <span class="swiper-button-prev-inner"></span>
+              </div>
+              <div class="swiper-button-next jury-swiper-button-next">
+                <span class="swiper-button-prev-inner"></span>
+              </div>
           </div>
         </section>
 
         <section class="features" data-test="features">
-          <h2 class="features__title">Наши преимущества</h2>
-          <div class="features__container">
-            <div class="features__list-item features__list-item--square">
-              <p class="features__list-item-title">900 <span>кв/м</span></p>
-              <div class="features__list-item-description-container">
-                <h3 class="features__list-item-subtitle">Площадь</h3>
-                <p class="features__list-item-description features__list-item-description--square">Занимайтесь без очередей и толкучки</p>
+            <h2 class="features__title">Наши преимущества</h2>
+            <div class="features__container">
+              <div class="features__list-item features__list-item--square">
+                <p class="features__list-item-title">900 <span>кв/м</span></p>
+                <div class="features__list-item-description-container">
+                  <h3 class="features__list-item-subtitle">Площадь</h3>
+                  <p class="features__list-item-description features__list-item-description--square">Занимайтесь без очередей <span>и толкучки</span></p>
+                </div>
               </div>
-            </div>
-            <div class="features__list-item features__list-item--cars">
-              <p class="features__list-item-title">70 <span>машин</span></p>
-              <div class="features__list-item-description-container">
-                <h3 class="features__list-item-subtitle">Собственная парковка</h3>
-                <p class="features__list-item-description features__list-item-description--cars">Вы всегда найдёте место для своей машины на нашей парковке</p>
+              <div class="features__list-item features__list-item--cars">
+                <p class="features__list-item-title">70 <span>машин</span></p>
+                <div class="features__list-item-description-container">
+                  <h3 class="features__list-item-subtitle">Собственная парковка</h3>
+                  <p class="features__list-item-description features__list-item-description--cars">Вы всегда найдёте место для своей машины на нашей парковке</p>
+                </div>
               </div>
-            </div>
-            <div class="features__center-block">
-              <div class="features__center-content">
-                <h3 class="features__center-title">100 <span>Тренажёров</span></h3>
-                <p class="features__center-subtitle">Современные тренажёры <span>на все группы мышц</span></p>
+              <div class="features__center-block">
+                <div class="features__center-content">
+                  <h3 class="features__center-title">100 <span>Тренажёров</span></h3>
+                  <p class="features__center-subtitle">Современные тренажёры <span>на все группы мышц</span></p>
+                </div>
               </div>
-            </div>
               <div class="features__list-item features__list-item--comfort">
                 <p class="features__list-item-title">350 <span>мест</span></p>
                 <div class="features__list-item-description-container">
@@ -415,7 +421,7 @@
                   <p class="features__list-item-description features__list-item-description--years">Добивайтесь своих целей быстрее <span>c профессиональным тренером</span></p>
                 </div>
               </div>
-          </div>
+            </div>
         </section>
 
         <section class="offers" data-test="offers">
@@ -427,7 +433,7 @@
                 <p class="offers__subtitle">4999</p>
                 <p class="offers__description">Безлимитный абонемент <span>в тренажёрный зал</span></p>
                 <div class="offers__link-container">
-                  <a class="offers__link link" href="#">Подробнее</a>
+                  <a class="offers__link link enabled" href="#">Подробнее</a>
                 </div>
               </div>
               <picture>
@@ -456,17 +462,17 @@
             <h2 class="faq__title" id="faq">Вопросы и ответы</h2>
             <div class="faq__wrapper">
               <ul class="faq__tabs">
-                <li class="faq__tabs-item faq__tabs-item--active" data-target="center">
-                  <h3 class="faq__tab">Центр</h3>
+                <li class="faq__tabs-item" data-target="center">
+                  <button class="faq__tab faq__tab--active" type="button">Центр</button>
                 </li>
                 <li class="faq__tabs-item" data-target="abonement">
-                  <h3 class="faq__tab">Абонемент</h3>
+                  <button class="faq__tab" type="button">Абонемент</button>
                 </li>
                 <li class="faq__tabs-item" data-target="services">
-                  <h3 class="faq__tab">Услуги</h3>
+                  <button class="faq__tab" type="button">Услуги</button>
                 </li>
                 <li class="faq__tabs-item" data-target="rules">
-                  <h3 class="faq__tab">Правила</h3>
+                  <button class="faq__tab" type="button">Правила</button>
                 </li>
               </ul>
               <div class="faq__content">
@@ -484,7 +490,7 @@
                     <p class="faq__answer">Да, у нас есть кулеры с прохладной водой, чтобы вы могли остаться гидратированными во время тренировки. Полотенца также предоставляются для вашего удобства.</p>
                   </details>
                   <details class="faq__question">
-                    <summary>Сколько тренеров работает <span></span>в клубе и какова <span>их квалификация?</span></summary>
+                    <summary>Сколько тренеров работает <span>в клубе и какова</span> <span>их квалификация?</span></summary>
                     <p class="faq__answer">В нашем клубе работает команда опытных и профессиональных тренеров, специализирующихся в различных областях фитнеса и здорового образа жизни. Каждый из наших тренеров имеет соответствующие сертификаты и квалификацию для обеспечения вас качественным обучением и поддержкой.</p>
                   </details>
                 </div>
@@ -548,49 +554,55 @@
         </section>
 
         <section class="reviews" data-test="reviews">
-          <h2 class="reviews__title">Отзывы</h2>
-          <div class="reviews-swiper-container swiper-container">
-            <div class="reviews-wrapper swiper-wrapper">
-              <div class="reviews-slider swiper-slide">
-                <div class="reviews-slider__holder">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/reviews/reviews-tablet@1x.webp, img/reviews/reviews-tablet@2x.webp 2x" width="80" height="80">
-                    <img class="reviews__img" src="img/reviews/reviews-mobile@1x.webp" width="68" height="68" srcset="img/reviews/reviews-mobile@2x.webp 2x" alt="Анна Орлова">
-                  </picture>
-                  <div class="reviews-slider__container">
-                    <h3 class="reviews__slider-title">Анна Орлова</h3>
-                    <p class="reviews__slider-description">«Хожу в Supergym уже больше <span> года. Нравится, что в клубе <span>всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время <span>нет очередей»</span></span></span></p>
+          <div class="reviews__holder">
+            <h2 class="reviews__title">Отзывы</h2>
+            <div class="reviews-swiper-container swiper-container">
+              <div class="reviews-wrapper swiper-wrapper">
+                <div class="reviews-slider swiper-slide">
+                  <div class="reviews-slider__holder">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/reviews/reviews-tablet@1x.webp, img/reviews/reviews-tablet@2x.webp 2x" width="80" height="80">
+                      <img class="reviews__img" src="img/reviews/reviews-mobile@1x.webp" width="68" height="68" srcset="img/reviews/reviews-mobile@2x.webp 2x" alt="Анна Орлова">
+                    </picture>
+                    <div class="reviews-slider__container">
+                      <h3 class="reviews__slider-title">Анна Орлова</h3>
+                      <p class="reviews__slider-description">«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. <span></span>Зал просторный, даже в вечернее время <span></span>нет очередей»</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="reviews-slider swiper-slide">
-                <div class="reviews-slider__holder">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/reviews/reviews-tablet@1x.webp, img/reviews/reviews-tablet@2x.webp 2x" width="80" height="80">
-                    <img class="reviews__img" src="img/reviews/reviews-mobile@1x.webp" width="68" height="68" srcset="img/reviews/reviews-mobile@2x.webp 2x" alt="Лера Булкина">
-                  </picture>
-                  <div class="reviews-slider__container">
-                    <h3 class="reviews__slider-title">Лера Булкина</h3>
-                    <p class="reviews__slider-description">«Supergym стал моим вторым домом уже больше года. Я оцениваю здесь всё: от чистоты и свежести воздуха до дружелюбного персонала и обновляемых тренажёров.»</p>
+                <div class="reviews-slider swiper-slide">
+                  <div class="reviews-slider__holder">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/reviews/reviews-tablet@1x.webp, img/reviews/reviews-tablet@2x.webp 2x" width="80" height="80">
+                      <img class="reviews__img" src="img/reviews/reviews-mobile@1x.webp" width="68" height="68" srcset="img/reviews/reviews-mobile@2x.webp 2x" alt="Лера Булкина">
+                    </picture>
+                    <div class="reviews-slider__container">
+                      <h3 class="reviews__slider-title">Лера Булкина</h3>
+                      <p class="reviews__slider-description">«Supergym стал моим вторым домом уже больше года. Я оцениваю здесь всё: от чистоты и свежести воздуха до дружелюбного персонала и обновляемых тренажёров.»</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="reviews-slider swiper-slide">
-                <div class="reviews-slider__holder">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/reviews/reviews-tablet@1x.webp, img/reviews/reviews-tablet@2x.webp 2x" width="80" height="80">
-                    <img class="reviews__img" src="img/reviews/reviews-mobile@1x.webp" width="68" height="68" srcset="img/reviews/reviews-mobile@2x.webp 2x" alt="Пряна Пулкина">
-                  </picture>
-                  <div class="reviews-slider__container">
-                    <h3 class="reviews__slider-title">Пряна Пулкина</h3>
-                    <p class="reviews__slider-description">«Мой опыт посещения Supergym длится уже год, и я ни разу не пожалел о своем выборе. Чистота, аккуратность, дружелюбный персонал.»</p>
+                <div class="reviews-slider swiper-slide">
+                  <div class="reviews-slider__holder">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/reviews/reviews-tablet@1x.webp, img/reviews/reviews-tablet@2x.webp 2x" width="80" height="80">
+                      <img class="reviews__img" src="img/reviews/reviews-mobile@1x.webp" width="68" height="68" srcset="img/reviews/reviews-mobile@2x.webp 2x" alt="Пряна Пулкина">
+                    </picture>
+                    <div class="reviews-slider__container">
+                      <h3 class="reviews__slider-title">Пряна Пулкина</h3>
+                      <p class="reviews__slider-description">«Мой опыт посещения Supergym длится уже год, и я ни разу не пожалел о своем выборе. Чистота, аккуратность, дружелюбный персонал.»</p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="reviews-swiper-pagination swiper-pagination"></div>
-            <div class="reviews-swiper-button-prev swiper-button-prev"></div>
-            <div class="reviews-swiper-button-next swiper-button-next"></div>
+            <div class="reviews-swiper-pagination swiper-pagination" tabindex="1"></div>
+            <div class="reviews-swiper-button-prev swiper-button-prev">
+              <span class="swiper-button-prev-inner"></span>
+            </div>
+            <div class="reviews-swiper-button-next swiper-button-next" tabindex="1">
+              <span class="swiper-button-prev-inner"></span>
+            </div>
           </div>
         </section>
 
@@ -604,12 +616,12 @@
               <div class="form__wrapper">
                 <div class="form__input-control input-control">
                   <label class="input-control__label visually-hidden" for="name">Имя</label>
-                  <input class="input-control__input" id="name" name="name" type="text" placeholder="Имя">
+                  <input class="input-control__input" id="name" name="name" type="text" placeholder="Имя" autocomplete="off">
                   <div class="input-control__error error"></div>
                 </div>
                 <div class="form__input-control input-control">
                   <label class="input-control__label visually-hidden" for="phone">Телефон</label>
-                  <input class="input-control__input" id="phone" name="phone" type="tel" placeholder="Телефон">
+                  <input class="input-control__input" id="phone" name="phone" type="tel" placeholder="Телефон" autocomplete="off">
                   <div class="input-control__error error"></div>
                 </div>
               </div>
@@ -630,11 +642,11 @@
                 </li>
                 <li class="contacts__list-item contacts__list-item--phone">
                   <p class="contacts__label">Телефон:</p>
-                  <a class="contacts__info" href="tel:88005555555">8 800 555-55-55</a>
+                  <a class="contacts__info contacts__info--link enabled" href="tel:88005555555">8 800 555-55-55</a>
                 </li>
                 <li class="contacts__list-item contacts__list-item--email">
                   <p class="contacts__label">Email:</p>
-                  <a class="contacts__info" href="mailto:oмск@supergym.r">oмск@supergym.ru</a>
+                  <a class="contacts__info contacts__info--link enabled" href="mailto:oмск@supergym.r">oмск@supergym.ru</a>
                 </li>
               </ul>
             </div>
@@ -648,26 +660,32 @@
               </svg>
             </div>
             <ul class="logo-links__text-links">
-              <li class="logo-links__text-links-item">
+              <li class="logo-links__text-links-item enabled">
                 <a class="logo-links__link" href="#faq">Услуги</a>
               </li>
-              <li class="logo-links__text-links-item">
+              <li class="logo-links__text-links-item enabled">
                 <a class="logo-links__link" href="#price">Абонементы</a>
               </li>
-              <li class="logo-links__text-links-item">
+              <li class="logo-links__text-links-item enabled">
                 <a class="logo-links__link" href="#offers">Акции</a>
               </li>
-              <li class="logo-links__text-links-item">
+              <li class="logo-links__text-links-item enabled">
                 <a class="logo-links__link" href="#juri">Тренеры</a>
               </li>
-              <li class="logo-links__text-links-item">
+              <li class="logo-links__text-links-item enabled">
                 <a class="logo-links__link" href="#faq">Расписание</a>
               </li>
             </ul>
             <div class="logo-links__image-links">
-              <a class="logo-links__social logo-links__social--vk" href="https://www.youtube.com/" target="_blank" rel="noreferrer noopener"></a>
-              <a class="logo-links__social logo-links__social--ok" href="https://www.google.ru/" target="_blank" rel="noreferrer noopener"></a>
-              <a class="logo-links__social logo-links__social--reddit" href="https://mail.ru/" target="_blank" rel="noreferrer noopener"></a>
+              <a class="logo-links__social logo-links__social--vk enabled" href="https://www.youtube.com/" target="_blank" rel="noreferrer noopener">
+                <span class="visually-hidden">Youtube</span>
+              </a>
+              <a class="logo-links__social logo-links__social--ok enabled" href="https://www.google.ru/" target="_blank" rel="noreferrer noopener">
+                <span class="visually-hidden">Google</span>
+              </a>
+              <a class="logo-links__social logo-links__social--reddit enabled" href="https://mail.ru/" target="_blank" rel="noreferrer noopener">
+                <span class="visually-hidden">Mail.ru</span>
+              </a>
             </div>
           </div>
         </div>

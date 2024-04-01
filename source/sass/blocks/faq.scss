@@ -36,6 +36,11 @@
   color: $basic-blue;
   margin: 0 0 35px;
 
+  @media (min-width: $tablet-width) {
+    font-size: 42px;
+    margin-bottom: 45px;
+  }
+
   @media (min-width: $desktop-width) {
     text-align: left;
   }
@@ -52,6 +57,7 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 46px;
   }
 
   @media (min-width: $desktop-width) {
@@ -61,9 +67,8 @@
 }
 
 .faq__tabs-item {
-  padding: 14px 23px;
   color: $basic-blue;
-  border: 1px solid #102654;
+  background-color: none;
 }
 
 .faq__tab {
@@ -73,12 +78,52 @@
   line-height: 100%;
   text-align: center;
   margin: 0;
+  width: 100%;
+  height: 100%;
+  padding: 14px 23px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid rgba(16, 38, 84, 0.2);
+  color: $basic-blue;
+
+  &:hover {
+    border: 1px solid $basic-blue;
+  }
+
+  &:focus {
+    border: 1px solid $basic-blue;
+  }
+
+  &:disabled {
+    border: 1px solid rgba(16, 38, 84, 0.2);
+    color: #c8c9cc;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    min-height: 54px;
+  }
 }
 
-.faq__tabs-item--active {
+.faq__tab--active {
   background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
   color: $basic-white;
-  border: 0;
+  border: none;
+
+  &:hover {
+    border: none;
+  }
+
+  &:focus {
+
+  }
+  &:active {
+
+  }
+
+  &:disabled {
+
+  }
 }
 
 .faq__question {
@@ -88,12 +133,38 @@
   line-height: 100%;
   padding: 20px 0;
   border-top: 1px solid var(--divider);
+
+  @media (min-width: $tablet-width) {
+    min-height: 91px;
+    padding-top: 36px;
+    padding-bottom: 8px;
+  }
+}
+
+.faq__question:first-child {
+
+  @media (min-width: $tablet-width) {
+    padding-top: 35px;
+    padding-bottom: 25px;
+  }
+}
+
+.faq__question:last-child {
+
+  @media (min-width: $tablet-width) {
+    padding-top: 26px;
+    padding-bottom: 27px;
+  }
 }
 
 .faq__question summary {
 
   span {
     display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 22px;
   }
 }
 
@@ -113,6 +184,7 @@
   list-style: none;
   position: relative;
   max-width: 260px;
+  cursor: pointer;
 
   span {
     display: block;
@@ -128,6 +200,15 @@
 
   @media (min-width: $desktop-width) {
     max-width: 830px;
+  }
+}
+
+.faq__question:last-child summary {
+
+  @media (min-width: $tablet-width) {
+    span:last-child {
+      display: block;
+    }
   }
 }
 
@@ -148,18 +229,30 @@
   transform: translateY(-50%);
   right: -30px;
   background-color: $basic-blue;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    right: -27px;
+  }
 }
 
 .faq__question[open] summary::before {
   position: absolute;
-  content: "+";
-  top: calc(50% - 4px);
+  width: 20px;
+  height: 20px;
+  content: "";
+  top: 50%;
   transform: translateY(-50%);
-  right: -20px;
-  width: 10px;
-  height: 10px;
-  color: $basic-white;
-  z-index: 1;
+  right: -25px;
+  mask: url("/img/sprite/minus.svg") no-repeat center;
+  background-color: $basic-white;
+  z-index: 999;
+
+  @media (min-width: $tablet-width) {
+    mask-size: 20px 20px;
+    right: -18px;
+  }
 }
 
 .faq__question:not([open]) summary::after {
@@ -169,16 +262,56 @@
   right: -30px;
   background-color: transparent;
   border: 1px solid $basic-blue;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    right: -27px;
+    top: calc(50% - 1px);
+  }
 }
 
 .faq__question:not([open]) summary::before {
   position: absolute;
-  content: "-";
-  top: calc(50% - 2px);
+  width: 20px;
+  height: 20px;
+  content: "";
+  top: 50%;
   transform: translateY(-50%);
-  right: -19px;
-  color: $basic-blue;
-  background-color: transparent;
+  right: -25px;
+  mask: url("/img/sprite/plus.svg") no-repeat center;
+  background-color: var(--btn-border);
+
+  @media (min-width: $tablet-width) {
+    mask-size: 20px 20px;
+    right: -18px;
+  }
+}
+
+.faq__question:not([open]):hover summary::after {
+  background-color: var(--btn-border);
+  border: none;
+}
+
+.faq__question:not([open]):focus summary::after {
+  background-color: var(--divider);
+  border: 1px solid $basic-blue;
+}
+
+.faq__question:not([open]):hover summary::before {
+  mask: url("/img/sprite/plus.svg") no-repeat center;
+  background-color: $basic-white;
+  z-index: 999;
+
+  @media (min-width: $tablet-width) {
+    mask-size: 20px 20px;
+  }
+}
+
+.faq__question:not([open]):focus summary::before {
+  mask: url("/img/sprite/plus.svg") no-repeat center;
+  background-color: $basic-white;
+  z-index: 999;
 }
 
 .faq__answer {
@@ -190,5 +323,11 @@
 
   span {
     display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    max-width: 570px;
+    line-height: 133%;
   }
 }
