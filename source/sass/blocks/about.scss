@@ -1,4 +1,4 @@
-.about {
+.aout {
   color: $basic-blue;
   min-height: 812px;
 
@@ -23,7 +23,7 @@
     max-width: 1366px;
     display: grid;
     grid-template-columns: 355px 1fr;
-    padding: 121px 104px 0 103px;
+    padding: 121px 104px 205px 103px;
   }
 }
 
@@ -32,7 +32,7 @@
 
   @media (min-width: $tablet-width) {
     text-align: center;
-    padding: 62px 45px 27px;
+    padding: 62px 45px 29px;
   }
 
   @media (min-width: $desktop-width) {
@@ -255,22 +255,22 @@
   transform: translate(-50%, -50%);
   width: 12px;
   height: 12px;
-  border-radius: 100%;
-  z-index: 999;
-  mask: url("../img/sprite/player-button.svg") no-repeat center;
+  mask: url("/__spritemap#sprite-player-button") no-repeat center;
+  mask-size: 9px 230px;
   background-color: $basic-white;
 
   @media (min-width: $desktop-width) {
-    width: 13px;
+    width: 15px;
     height: 15px;
-    left: calc(50% - (-4px));
+    mask: url("/__spritemap#sprite-player-button") no-repeat center;
+    mask-size: 13px 203px;
+    background-color: $basic-white;
+    left: calc(50% + 5px);
   }
 }
 
 .about__play-button:hover + .about__play-button-holder + .about__play-button-start {
-  mask: url("../img/sprite/player-button.svg") no-repeat center;
   background-color: rgba(16, 38, 84, 0.6);
-  opacity: 0.6;
 }
 
 .about__play-button:focus + .about__play-button-holder + .about__play-button-start {
