@@ -19,13 +19,15 @@
 
   &:focus {
     color: var(--price);
-    border: 2px solid #000;
+    border: 2px solid #000000;
     background-color: rgba(255, 255, 255, 0.8);
   }
+
   &:active {
     color: $basic-blue;
     background-color: $basic-white;
   }
+
   &:disabled {
     border: 2px solid $basic-white;
     opacity: 0.5;
@@ -44,11 +46,13 @@
     color: $basic-white;
     background: linear-gradient(151deg, rgba(237, 2, 51, 0.8) 0%, rgba(0, 62, 183, 0.8) 100%);
   }
+
   &:active {
     border: none;
     opacity: 0.7;
     background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
   }
+
   &:disabled {
     border: 2px solid #102654;
     background: transparent;

@@ -1,7 +1,7 @@
 .form-holder {
   background-color: $basic-blue;
   color: $basic-white;
-  padding: 70px 15px 60px 15px;
+  padding: 70px 15px 60px;
 
   @media (min-width: $tablet-width) {
     padding-top: 58px;
@@ -26,6 +26,7 @@
   @media (min-width: $tablet-width) {
     max-width: 440px;
   }
+
   @media (min-width: $desktop-width) {
     max-width: 480px;
   }
@@ -42,6 +43,7 @@
     gap: 30px;
     margin: 0;
   }
+
   @media (min-width: $desktop-width) {
     grid-template-columns: 225px 225px;
     margin-bottom: 1px;

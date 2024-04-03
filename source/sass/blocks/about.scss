@@ -5,6 +5,7 @@
   @media (min-width: $tablet-width) {
     min-height: 751px;
   }
+
   @media (min-width: $desktop-width) {
     min-height: 761px;
   }
@@ -195,6 +196,7 @@
     border-color: $basic-blue;
     opacity: 1;
   }
+
   &:active {
     border-color: $basic-blue;
     opacity: 1;
@@ -255,7 +257,7 @@
   height: 12px;
   border-radius: 100%;
   z-index: 999;
-  mask: url('../img/sprite/player-button.svg') no-repeat center;
+  mask: url("../img/sprite/player-button.svg") no-repeat center;
   background-color: $basic-white;
 
   @media (min-width: $desktop-width) {
@@ -266,7 +268,7 @@
 }
 
 .about__play-button:hover + .about__play-button-holder + .about__play-button-start {
-  mask: url('../img/sprite/player-button.svg') no-repeat center;
+  mask: url("../img/sprite/player-button.svg") no-repeat center;
   background-color: rgba(16, 38, 84, 0.6);
   opacity: 0.6;
 }

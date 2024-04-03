@@ -1,6 +1,6 @@
 .features {
   background-color: var(--primary-bg);
-  padding: 42px 0 39px 0;
+  padding: 42px 0 39px;
 
   @media (min-width: $tablet-width) {
     padding-top: 61px;
@@ -8,7 +8,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 100px 0 99px 0;
+    padding: 100px 0 99px;
   }
 }
 
@@ -47,17 +47,17 @@
   line-height: 100%;
   color: $basic-blue;
   text-align: center;
-  margin: 0 0 39px 0;
+  margin: 0 0 39px;
 
   @media (min-width: $tablet-width) {
     font-size: 42px;
-    margin: 0 0 57px 0;
+    margin: 0 0 57px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
     font-size: 54px;
-    margin: 0 0 38px 0;
+    margin: 0 0 38px;
   }
 }
 
@@ -76,18 +76,19 @@
 .features__container li:nth-child(2) {
   @media (min-width: $desktop-width) {
     position: relative;
+    margin-top: 12px;
   }
 }
 
 .features__container li:nth-child(1)::before,
 .features__container li:nth-child(2)::before {
   @media (min-width: $desktop-width) {
-    content: '';
+    content: "";
     position: absolute;
     width: 360px;
     height: 2px;
     top: calc(50% + 96px);
-    background-color:  rgba(209, 10, 66, 0.2);
+    background-color: rgba(209, 10, 66, 0.2);
   }
 }
 
@@ -100,6 +101,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
   }
+
   @media (min-width: $desktop-width) {
     margin-left: 5px;
   }
@@ -130,7 +132,7 @@
   background: linear-gradient(137deg, #d10a42 32%, #0041ca 45%);
   background-clip: text;
   color: transparent;
-  margin: 0 0 15px 0;
+  margin: 0 0 15px;
 
   span {
     font-family: var(--font-family);
@@ -156,18 +158,19 @@
 .features__container li:nth-child(1) h3,
 .features__container li:nth-child(2) h3,
 .features__container li:nth-child(4) h3,
-.features__container li:nth-child(5) h3  {
+.features__container li:nth-child(5) h3 {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 18px;
   line-height: 111%;
   color: $basic-blue;
-  margin: 0 0 11px 0;
+  margin: 0 0 11px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 100%;
   }
+
   @media (min-width: $desktop-width) {
     font-size: 22px;
     margin-bottom: 7px;
@@ -220,7 +223,6 @@
 
 
 .features__container li:nth-child(4) > div p {
-
   span {
     display: block;
 
@@ -231,7 +233,6 @@
 }
 
 .features__container li:nth-child(2) > div p {
-
   @media (min-width: $desktop-width) {
     span:nth-child(1) {
       display: block;
@@ -240,7 +241,6 @@
 }
 
 .features__container li:nth-child(5) > div p {
-
   span:nth-child(2) {
     display: block;
   }
@@ -250,11 +250,13 @@
       display: inline;
     }
   }
+
   @media (min-width: $tablet-width) {
     span:nth-child(2) {
       display: block;
     }
   }
+
   @media (min-width: $tablet-width) {
     span:nth-child(3) {
       display: inline;
@@ -266,6 +268,7 @@
       display: block;
     }
   }
+
   @media (min-width: $desktop-width) {
     span:nth-child(2) {
       display: inline;
@@ -279,7 +282,7 @@
   color: $basic-white;
   padding: 37px 15px 35px;
   max-width: 320px;
-  margin: 2px auto 0 auto;
+  margin: 2px auto 0;
   min-height: 225px;
 
   @media (min-width: $tablet-width) {
@@ -290,7 +293,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
-    margin: 58px 0 0 0;
+    margin: 58px 0 0;
     max-width: none;
   }
 }
@@ -300,7 +303,7 @@
   font-weight: 700;
   font-size: 64px;
   line-height: 79%;
-  margin: 0 0 4px 0;
+  margin: 0 0 4px;
 
   span {
     font-size: 22px;
@@ -384,7 +387,6 @@
 }
 
 .features__container li:nth-child(1) {
-
   @media (min-width: $tablet-width) {
     grid-column: span 2;
 
@@ -401,10 +403,9 @@
 }
 
 .features__container li:nth-child(4) {
-
   @media (max-width: $mobile-width-only) {
     margin-top: 2px;
-}
+  }
 
   @media (min-width: $tablet-width) {
     grid-column: span 2;
@@ -416,7 +417,6 @@
 }
 
 .features__container li:nth-child(2) {
-
   @media (min-width: $tablet-width) {
     grid-column: span 2;
 
@@ -432,8 +432,7 @@
   }
 }
 
-.features__container li:nth-child(5){
-
+.features__container li:nth-child(5) {
   @media (max-width: $mobile-width-only) {
     margin-top: 2px;
   }
@@ -450,23 +449,8 @@
 .features__container li:nth-child(2) > p,
 .features__container li:nth-child(5) > p {
   margin-bottom: 12px;
-}
 
-.features__container li:nth-child(1),
-.features__container li:nth-child(2) {
-  @media (min-width: $desktop-width) {
-    margin-top: 12px;
-  }
-}
-
-.features__container li:nth-child(2) > p,
-.features__container li:nth-child(5) > p {
   @media (min-width: $desktop-width) {
     margin-right: 80px;
   }
 }
-
-
-
-
-

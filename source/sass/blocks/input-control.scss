@@ -20,11 +20,11 @@
 }
 
 .input-control__input.error {
-  border-bottom-color: red;
+  border-bottom-color: var(--play-btn);
 }
 
 .input-control__error {
-  color: red;
+  color: var(--play-btn);
   margin-top: 10px;
 }
 
@@ -45,7 +45,7 @@
   border-bottom: 1px solid $basic-white;
 }
 
-.input-control__input:disabled  {
+.input-control__input:disabled {
   opacity: 0.3;
 }
 

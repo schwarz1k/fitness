@@ -1,12 +1,13 @@
 .logo-links {
   background-color: var(--dark);
-  padding: 40px 15px 39px 15px;
+  padding: 40px 15px 39px;
 
   @media (min-width: $tablet-width) {
-    padding: 44px 15px 18px 15px;
+    padding: 44px 15px 18px;
   }
+
   @media (min-width: $desktop-width) {
-    padding: 41px 15px 20px 15px;
+    padding: 41px 15px 20px;
   }
 }
 
@@ -20,6 +21,7 @@
     grid-template-columns: repeat(3, 110px 463px 105px);
     grid-auto-flow: dense;
   }
+
   @media (min-width: $desktop-width) {
     max-width: 1160px;
     grid-template-columns: repeat(3, 130px 600px 95px);
@@ -68,6 +70,7 @@
     margin-left: 20px;
     margin-right: 20px;
   }
+
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(5, auto);
     column-gap: 52px;
@@ -108,6 +111,7 @@
   @media (min-width: $tablet-width) {
     column-gap: 15px;
   }
+
   @media (min-width: $desktop-width) {
     height: 25px;
     margin-left: 69px;
@@ -122,6 +126,7 @@
     width: 110px;
     height: 22px;
   }
+
   @media (min-width: $desktop-width) {
     width: 130px;
     height: 26px;
@@ -130,6 +135,7 @@
 
 .logo-links__logo-holder {
   margin-bottom: 12px;
+
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
   }
@@ -198,5 +204,4 @@
     background-color: var(--dark);
   }
 }
-
 

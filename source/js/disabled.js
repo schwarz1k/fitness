@@ -1,6 +1,6 @@
 const enabledLinks = document.querySelectorAll('.enabled');
 
-enabledLinks.forEach(function(link) {
+enabledLinks.forEach((link) => {
   link.addEventListener('click', function(event) {
     if (this.classList.contains('enabled')) {
       this.classList.remove('enabled');
@@ -13,11 +13,11 @@ enabledLinks.forEach(function(link) {
   });
 });
 
-document.querySelector('.swiper-button-prev').addEventListener('click', function() {
+document.querySelector('.swiper-button-prev').addEventListener('click', () => {
   document.querySelector('.test').classList.add('active');
 });
 
-document.querySelector('.swiper-button-next').addEventListener('click', function() {
+document.querySelector('.swiper-button-next').addEventListener('click', () => {
   document.querySelector('.test').classList.add('active');
 });
 

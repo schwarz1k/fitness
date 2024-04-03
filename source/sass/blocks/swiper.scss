@@ -3,7 +3,7 @@
 }
 
 .swiper__holder {
-  padding: 43px 46.5px 40px 46.5px;
+  padding: 43px 46.5px 40px;
 
   @media (min-width: $tablet-width) {
     text-align: center;
@@ -34,7 +34,7 @@
   line-height: 100%;
   text-transform: none;
   text-align: center;
-  margin: 0 0 19px 0;
+  margin: 0 0 19px;
 
   @media (min-width: $tablet-width) {
     font-size: 54px;
@@ -56,6 +56,14 @@
 
 .swiper-slide {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 5px;
+  }
 
   @media (width <= 767px) {
     &:nth-child(3) {
@@ -85,17 +93,6 @@
 @media (width >= 768px) and (width <= 1365px) {
   .swiper-slide {
     width: 50%;
-  }
-}
-
-.swiper-slide {
-
-  @media (min-width: $tablet-width) {
-    margin-right: 4px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-right: 5px;
   }
 }
 
@@ -254,6 +251,7 @@
   @media (min-width: $tablet-width) {
     left: calc(50% - 355px);
   }
+
   @media (min-width: $desktop-width) {
     top: calc(50% + (-10px));
     transform: translateY(50%);
@@ -267,6 +265,7 @@
   @media (min-width: $tablet-width) {
     right: calc(50% - 361px);
   }
+
   @media (min-width: $desktop-width) {
     top: calc(50% + (-10px));
     transform: translateY(50%);

@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const firstQuestion = accordion.querySelector('details');
       if (firstQuestion) {
         firstQuestion.setAttribute('open', 'true');
+        firstQuestion.classList.add('open');
       }
     } else {
       accordion.style.display = 'none';
@@ -37,5 +38,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const detailsElements = document.querySelectorAll('details');
 
   detailsElements.forEach((details) => details.addEventListener('toggle', function () {
+    if (this.open) {
+      this.classList.add('open');
+    } else {
+      this.classList.remove('open');
+    }
   }));
 });

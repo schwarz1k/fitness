@@ -3,7 +3,7 @@
 }
 
 .contacts__wrapper {
-  padding: 37px 15px 40px 15px;
+  padding: 37px 15px 40px;
   max-width: 320px;
   margin: 0 auto;
 
@@ -12,6 +12,7 @@
     padding-top: 59px;
     padding-bottom: 45px;
   }
+
   @media (min-width: $desktop-width) {
     max-width: 505px;
   }
@@ -48,7 +49,7 @@
 @media (min-width: $tablet-width) {
   .contacts__list {
     display: grid;
-    grid-template-columns: repeat(2,190px);
+    grid-template-columns: repeat(2, 190px);
     column-gap: 44px;
     position: relative;
   }
@@ -67,6 +68,7 @@
       left: calc(50% - 15px);
       height: 117px;
     }
+
     @media (min-width: $desktop-width) {
       left: 50%;
     }
@@ -83,10 +85,10 @@
 
 .contacts__address,
 .contacts__list-item--schedule {
-
   @media (min-width: $tablet-width) {
     margin-left: -15px;
   }
+
   @media (min-width: $desktop-width) {
     margin-left: 0;
   }
@@ -130,7 +132,6 @@
 }
 
 .contacts__info--link {
-
   &:hover {
     color: rgba(28, 51, 116, 0.5);
   }

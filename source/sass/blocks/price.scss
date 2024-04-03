@@ -1,12 +1,12 @@
 .price {
   color: $basic-blue;
   background-color: var(--primary-bg);
-  padding: 42px 15px 42px 15px;
+  padding: 42px 15px;
 
   @media (min-width: $tablet-width) {
     background: var(--primary-bg) url("../img/price/weights-tablet.png") no-repeat right bottom;
     background-size: auto;
-    padding: 62px 15px 60px 15px;
+    padding: 62px 15px 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -119,6 +119,7 @@
     color: $basic-blue;
     opacity: 1;
   }
+
   &:active {
     color: $basic-blue;
     opacity: 1;
@@ -188,7 +189,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 60px 58px 58px 58px;
+    padding: 60px 58px 58px;
     min-width: 380px;
     max-width: 380px;
     min-height: 460px;
@@ -197,7 +198,7 @@
   @media (min-width: $desktop-width) {
     min-width: 360px;
     min-height: 448px;
-    padding: 53px 75px 51px 75px;
+    padding: 53px 75px 51px;
   }
 }
 
@@ -299,13 +300,6 @@
   width: 100%;
   height: auto;
   padding: 25px;
-
-  @media (min-width: $tablet-width) {
-
-  }
-
-  @media (min-width: $desktop-width) {
-  }
 }
 
 .price__card-button:not(:last-child) {

@@ -1,12 +1,13 @@
 .offers {
   color: $basic-blue;
   text-align: center;
-  padding: 41px 0 41px 0;
+  padding: 41px 0;
 
   @media (min-width: $tablet-width) {
     padding-top: 61px;
     padding-bottom: 63px;
   }
+
   @media (min-width: $desktop-width) {
     padding-top: 100px;
     padding-bottom: 101px;
@@ -24,6 +25,7 @@
     font-size: 42px;
     margin-bottom: 34px;
   }
+
   @media (min-width: $desktop-width) {
     font-size: 54px;
     margin-bottom: 69px;
@@ -43,7 +45,7 @@
 .offers__main-wrapper {
   background-color: var(--play-btn);
   color: $basic-white;
-  padding: 30px 30px 10px 30px;
+  padding: 30px 30px 10px;
   min-height: 271px;
 
   @media (min-width: $tablet-width) {
@@ -71,6 +73,7 @@
     display: flex;
     justify-content: center;
   }
+
   @media (min-width: $desktop-width) {
     justify-content: start;
   }
@@ -87,6 +90,7 @@
     font-size: 24px;
     margin-bottom: 21px;
   }
+
   @media (min-width: $desktop-width) {
     font-size: 26px;
   }
@@ -200,7 +204,7 @@
     max-width: 324px;
     text-align: left;
     min-width: 324px;
-    padding: 20px 20px 21px 20px;
+    padding: 20px 20px 21px;
     height: auto;
     min-height: 188px;
   }
@@ -289,6 +293,7 @@
     min-height: 48px;
     margin-bottom: 31px;
   }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 17px;
   }

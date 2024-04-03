@@ -16,7 +16,7 @@
 
   @media (min-width: $desktop-width) {
     max-width: 1366px;
-    padding: 100px 103px 100px 103px;
+    padding: 100px 103px;
   }
 }
 
@@ -116,17 +116,6 @@
   &:hover {
     border: none;
   }
-
-  &:focus {
-
-  }
-  &:active {
-
-  }
-
-  &:disabled {
-
-  }
 }
 
 .faq__accordion details {
@@ -142,6 +131,7 @@
     padding-top: 36px;
     padding-bottom: 8px;
   }
+
   @media (min-width: $desktop-width) {
     min-height: 81px;
     padding-top: 36px;
@@ -149,8 +139,7 @@
   }
 }
 
-.faq__accordion  details:first-child {
-
+.faq__accordion details:first-child {
   @media (min-width: $tablet-width) {
     padding-top: 35px;
     padding-bottom: 25px;
@@ -162,12 +151,14 @@
   }
 }
 
-.faq__accordion  details:last-child {
+.faq__accordion details:last-child {
+  border-bottom: 1px solid var(--divider);
 
   @media (min-width: $tablet-width) {
     padding-top: 26px;
     padding-bottom: 27px;
   }
+
   @media (min-width: $desktop-width) {
     padding-top: 31px;
     padding-bottom: 32px;
@@ -175,7 +166,6 @@
 }
 
 .faq__accordion summary {
-
   span {
     display: block;
   }
@@ -183,21 +173,19 @@
   @media (min-width: $tablet-width) {
     font-size: 22px;
   }
+
   @media (min-width: $desktop-width) {
     font-size: 24px;
   }
-}
-
-.faq__accordion details:last-child {
-  border-bottom: 1px solid var(--divider);
 }
 
 .faq__accordion {
   text-align: left;
 }
 
-.faq__accordion details[open] summary {
+.faq__accordion .open summary {
   margin-bottom: 20px;
+
   @media (min-width: $desktop-width) {
     margin-bottom: 35px;
   }
@@ -227,16 +215,11 @@
 }
 
 .faq__accordion details:last-child summary {
-
-  @media (min-width: $tablet-width) {
-    span:last-child {
+  span:last-child {
+    @media (min-width: $tablet-width) {
       display: block;
     }
-  }
-}
 
-.faq__accordion details:last-child summary {
-  span:last-child {
     @media (min-width: $desktop-width) {
       display: inline;
     }
@@ -254,7 +237,7 @@
   background-color: transparent;
 }
 
-.faq__accordion details[open] summary::after {
+.faq__accordion .open summary::after {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -266,12 +249,13 @@
     height: 40px;
     right: -27px;
   }
+
   @media (min-width: $desktop-width) {
     right: -60px;
   }
 }
 
-.faq__accordion details[open] summary::before {
+.faq__accordion .open summary::before {
   position: absolute;
   width: 20px;
   height: 20px;
@@ -287,6 +271,7 @@
     mask-size: 20px 20px;
     right: -18px;
   }
+
   @media (min-width: $desktop-width) {
     right: -51px;
   }
@@ -306,6 +291,7 @@
     right: -27px;
     top: calc(50% - 1px);
   }
+
   @media (min-width: $desktop-width) {
     right: -60px;
   }
@@ -326,6 +312,7 @@
     mask-size: 20px 20px;
     right: -18px;
   }
+
   @media (min-width: $desktop-width) {
     right: -50px;
   }
@@ -366,6 +353,7 @@
 
   span:nth-child(1) {
     display: inline;
+
     @media (min-width: $desktop-width) {
       display: block;
     }
@@ -373,6 +361,7 @@
 
   span:nth-child(2) {
     display: block;
+
     @media (min-width: $desktop-width) {
       display: inline;
     }
@@ -380,6 +369,7 @@
 
   span:nth-child(3) {
     display: inline;
+
     @media (min-width: $desktop-width) {
       display: inline;
     }
@@ -390,6 +380,7 @@
     max-width: 570px;
     line-height: 133%;
   }
+
   @media (min-width: $desktop-width) {
     max-width: 630px;
   }
