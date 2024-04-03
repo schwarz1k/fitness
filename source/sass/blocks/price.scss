@@ -1,7 +1,7 @@
 .price {
   color: $basic-blue;
   background-color: var(--primary-bg);
-  padding: 46px 15px 42px 15px;
+  padding: 46px 15px 42px;
 
   @media (min-width: $tablet-width) {
     background: var(--primary-bg) url("../img/price/weights-tablet.png") no-repeat right bottom;

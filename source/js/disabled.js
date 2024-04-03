@@ -20,4 +20,3 @@ document.querySelector('.swiper-button-prev').addEventListener('click', () => {
 document.querySelector('.swiper-button-next').addEventListener('click', () => {
   document.querySelector('.test').classList.add('active');
 });
-
