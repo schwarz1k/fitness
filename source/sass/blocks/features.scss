@@ -72,7 +72,29 @@
   }
 }
 
-.features__list-item {
+.features__container li:nth-child(1),
+.features__container li:nth-child(2) {
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}
+
+.features__container li:nth-child(1)::before,
+.features__container li:nth-child(2)::before {
+  @media (min-width: $desktop-width) {
+    content: '';
+    position: absolute;
+    width: 360px;
+    height: 2px;
+    top: calc(50% + 96px);
+    background-color:  rgba(209, 10, 66, 0.2);
+  }
+}
+
+.features__container li:nth-child(1),
+.features__container li:nth-child(2),
+.features__container li:nth-child(4),
+.features__container li:nth-child(5) {
   display: block;
 
   @media (min-width: $tablet-width) {
@@ -83,7 +105,10 @@
   }
 }
 
-.features__list-item-description-container {
+.features__container li:nth-child(1) div,
+.features__container li:nth-child(2) div,
+.features__container li:nth-child(4) div,
+.features__container li:nth-child(5) div {
   max-width: 250px;
   margin: 0 auto;
 
@@ -94,7 +119,10 @@
   }
 }
 
-.features__list-item-title {
+.features__container li:nth-child(1) > p,
+.features__container li:nth-child(2) > p,
+.features__container li:nth-child(4) > p,
+.features__container li:nth-child(5) > p {
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 64px;
@@ -125,7 +153,10 @@
   }
 }
 
-.features__list-item-subtitle {
+.features__container li:nth-child(1) h3,
+.features__container li:nth-child(2) h3,
+.features__container li:nth-child(4) h3,
+.features__container li:nth-child(5) h3  {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 18px;
@@ -143,7 +174,10 @@
   }
 }
 
-.features__list-item-description {
+.features__container li:nth-child(1) div p,
+.features__container li:nth-child(2) div p,
+.features__container li:nth-child(4) div p,
+.features__container li:nth-child(5) div p {
   font-family: var(--font-family);
   font-weight: 300;
   font-size: 14px;
@@ -151,19 +185,42 @@
   color: $basic-blue;
   margin: 0;
 
-  span {
-    @media (min-width: $tablet-width) {
-      display: block;
-    }
-  }
-
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 150%;
   }
 }
 
-.features__list-item-description--comfort {
+.features__container li:nth-child(1) div p span,
+.features__container li:nth-child(2) div p span,
+.features__container li:nth-child(4) div p span,
+.features__container li:nth-child(5) div p span {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
+}
+
+.features__container li:nth-child(1) div p span {
+  display: inline;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.features__container li:nth-child(2) div p span {
+  display: inline;
+}
+
+.features__container li:nth-child(5) div p span {
+  display: inline;
+}
+
+
+.features__container li:nth-child(4) > div p {
+
   span {
     display: block;
 
@@ -173,7 +230,8 @@
   }
 }
 
-.features__list-item-description--cars {
+.features__container li:nth-child(2) > div p {
+
   @media (min-width: $desktop-width) {
     span:nth-child(1) {
       display: block;
@@ -181,7 +239,8 @@
   }
 }
 
-.features__list-item-description--years {
+.features__container li:nth-child(5) > div p {
+
   span:nth-child(2) {
     display: block;
   }
@@ -214,7 +273,7 @@
   }
 }
 
-.features__center-content {
+.features__container li:nth-child(3) div {
   font-size: 24px;
   font-weight: 700;
   color: $basic-white;
@@ -236,7 +295,7 @@
   }
 }
 
-.features__center-title {
+.features__container li:nth-child(3) div h3 {
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 64px;
@@ -271,7 +330,7 @@
   }
 }
 
-.features__center-subtitle {
+.features__container li:nth-child(3) div p {
   font-family: var(--font-family);
   font-weight: 300;
   font-size: 14px;
@@ -298,7 +357,7 @@
   }
 }
 
-.features__center-block {
+.features__container li:nth-child(3) {
   flex: 1;
   text-align: center;
   background-color: var(--btn-border);
@@ -324,13 +383,12 @@
   }
 }
 
-.features__list-item--square {
+.features__container li:nth-child(1) {
 
   @media (min-width: $tablet-width) {
     grid-column: span 2;
 
-    .features__list-item-subtitle {
-
+    h3 {
       @media (min-width: $desktop-width) {
         margin-top: 0;
       }
@@ -342,7 +400,7 @@
   }
 }
 
-.features__list-item--comfort {
+.features__container li:nth-child(4) {
 
   @media (max-width: $mobile-width-only) {
     margin-top: 2px;
@@ -357,13 +415,12 @@
   }
 }
 
-.features__list-item--cars {
+.features__container li:nth-child(2) {
 
   @media (min-width: $tablet-width) {
     grid-column: span 2;
 
-    .features__list-item-subtitle {
-
+    h3 {
       @media (min-width: $desktop-width) {
         margin-top: 0;
       }
@@ -375,7 +432,7 @@
   }
 }
 
-.features__list-item--years {
+.features__container li:nth-child(5){
 
   @media (max-width: $mobile-width-only) {
     margin-top: 2px;
@@ -390,20 +447,20 @@
   }
 }
 
-.features__list-item--cars .features__list-item-title,
-.features__list-item--years .features__list-item-title {
+.features__container li:nth-child(2) > p,
+.features__container li:nth-child(5) > p {
   margin-bottom: 12px;
 }
 
-.features__list-item--square,
-.features__list-item--cars {
+.features__container li:nth-child(1),
+.features__container li:nth-child(2) {
   @media (min-width: $desktop-width) {
     margin-top: 12px;
   }
 }
 
-.features__list-item--cars .features__list-item-title,
-.features__list-item--years .features__list-item-title {
+.features__container li:nth-child(2) > p,
+.features__container li:nth-child(5) > p {
   @media (min-width: $desktop-width) {
     margin-right: 80px;
   }

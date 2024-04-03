@@ -51,7 +51,7 @@
   max-width: none;
 }
 
-.reviews__img {
+.reviews-slider > div img {
   min-height: 0;
   object-fit: contain;
   margin-bottom: 2px;
@@ -80,7 +80,7 @@
   }
 }
 
-.reviews-slider__holder {
+.reviews-slider > div {
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 80px 320px;
@@ -89,7 +89,7 @@
   }
 }
 
-.reviews-slider__container {
+.reviews-slider > div div {
   @media (min-width: $tablet-width) {
     text-align: left;
     margin-left: 40px;
@@ -100,7 +100,7 @@
   }
 }
 
-.reviews__slider-title {
+.reviews-slider > div div h3 {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 18px;
@@ -113,7 +113,7 @@
   }
 }
 
-.reviews__slider-description {
+.reviews-slider > div div p {
   font-family: var(--font-family);
   font-weight: 300;
   font-size: 14px;

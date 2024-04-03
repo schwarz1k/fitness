@@ -16,6 +16,16 @@
   padding-top: 5px;
   padding-bottom: 5px;
   outline: 0;
+  color: var(--font-family);
+}
+
+.input-control__input.error {
+  border-bottom-color: red;
+}
+
+.input-control__error {
+  color: red;
+  margin-top: 10px;
 }
 
 .input-control__input:focus {

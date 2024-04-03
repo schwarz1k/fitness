@@ -80,7 +80,7 @@
   }
 }
 
-.about__description {
+.about__wrapper div p {
   font-family: var(--font-family);
   font-weight: 300;
   font-size: 14px;
@@ -110,11 +110,11 @@
   }
 }
 
-.about__description:not(:last-child) {
+.about__wrapper div p:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.about__description--additional {
+.about__wrapper p:last-child {
   display: none;
 
   @media (min-width: $desktop-width) {

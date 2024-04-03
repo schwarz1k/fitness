@@ -1,8 +1,0 @@
-.footer__container {
-  @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: repeat(2, 683px);
-    margin: 0 auto;
-    max-width: 1366px;
-  }
-}

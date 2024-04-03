@@ -36,11 +36,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const errorDiv = input.parentElement.querySelector('.input-control__error');
     errorDiv.textContent = message;
     errorDiv.style.display = 'block';
+
+    input.classList.add('error');
   }
 
   function hideError(input) {
     const errorDiv = input.parentElement.querySelector('.input-control__error');
     errorDiv.textContent = '';
     errorDiv.style.display = 'none';
+
+    input.classList.remove('error');
   }
 });

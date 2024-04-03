@@ -129,7 +129,7 @@
   }
 }
 
-.faq__question {
+.faq__accordion details {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 20px;
@@ -149,7 +149,7 @@
   }
 }
 
-.faq__question:first-child {
+.faq__accordion  details:first-child {
 
   @media (min-width: $tablet-width) {
     padding-top: 35px;
@@ -162,7 +162,7 @@
   }
 }
 
-.faq__question:last-child {
+.faq__accordion  details:last-child {
 
   @media (min-width: $tablet-width) {
     padding-top: 26px;
@@ -174,7 +174,7 @@
   }
 }
 
-.faq__question summary {
+.faq__accordion summary {
 
   span {
     display: block;
@@ -188,7 +188,7 @@
   }
 }
 
-.faq__question:last-child {
+.faq__accordion details:last-child {
   border-bottom: 1px solid var(--divider);
 }
 
@@ -196,14 +196,14 @@
   text-align: left;
 }
 
-.faq__question[open] summary {
+.faq__accordion details[open] summary {
   margin-bottom: 20px;
   @media (min-width: $desktop-width) {
     margin-bottom: 35px;
   }
 }
 
-.faq__question summary {
+.faq__accordion details summary {
   list-style: none;
   position: relative;
   max-width: 245px;
@@ -226,7 +226,7 @@
   }
 }
 
-.faq__question:last-child summary {
+.faq__accordion details:last-child summary {
 
   @media (min-width: $tablet-width) {
     span:last-child {
@@ -235,7 +235,7 @@
   }
 }
 
-.faq__question:last-child summary {
+.faq__accordion details:last-child summary {
   span:last-child {
     @media (min-width: $desktop-width) {
       display: inline;
@@ -243,7 +243,7 @@
   }
 }
 
-.faq__question summary::after {
+.faq__accordion details summary::after {
   content: "";
   position: absolute;
   right: 0;
@@ -254,7 +254,7 @@
   background-color: transparent;
 }
 
-.faq__question[open] summary::after {
+.faq__accordion details[open] summary::after {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -271,7 +271,7 @@
   }
 }
 
-.faq__question[open] summary::before {
+.faq__accordion details[open] summary::before {
   position: absolute;
   width: 20px;
   height: 20px;
@@ -292,7 +292,7 @@
   }
 }
 
-.faq__question:not([open]) summary::after {
+.faq__accordion details:not([open]) summary::after {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -311,7 +311,7 @@
   }
 }
 
-.faq__question:not([open]) summary::before {
+.faq__accordion details:not([open]) summary::before {
   position: absolute;
   width: 20px;
   height: 20px;
@@ -331,17 +331,17 @@
   }
 }
 
-.faq__question:not([open]):hover summary::after {
+.faq__accordion details:not([open]):hover summary::after {
   background-color: var(--btn-border);
   border: none;
 }
 
-.faq__question:not([open]):focus summary::after {
+.faq__accordion details:not([open]):focus summary::after {
   background-color: var(--divider);
   border: 1px solid $basic-blue;
 }
 
-.faq__question:not([open]):hover summary::before {
+.faq__accordion details:not([open]):hover summary::before {
   mask: url("/img/sprite/plus.svg") no-repeat center;
   background-color: $basic-white;
   z-index: 999;
@@ -351,13 +351,13 @@
   }
 }
 
-.faq__question:not([open]):focus summary::before {
+.faq__accordion details:not([open]):focus summary::before {
   mask: url("/img/sprite/plus.svg") no-repeat center;
   background-color: $basic-white;
   z-index: 999;
 }
 
-.faq__answer {
+.faq__accordion details p {
   font-family: var(--font-family);
   font-weight: 300;
   font-size: 16px;

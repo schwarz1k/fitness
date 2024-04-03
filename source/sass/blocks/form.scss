@@ -9,12 +9,25 @@
   }
 }
 
+.form-contact {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 683px);
+    margin: 0 auto;
+    max-width: 1366px;
+  }
+}
+
+
 .form__container {
   max-width: 290px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     max-width: 440px;
+  }
+  @media (min-width: $desktop-width) {
+    max-width: 480px;
   }
 }
 
@@ -28,6 +41,10 @@
     grid-template-columns: 205px 205px;
     gap: 30px;
     margin: 0;
+  }
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 225px 225px;
+    margin-bottom: 1px;
   }
 }
 
