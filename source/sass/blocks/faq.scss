@@ -16,7 +16,7 @@
 
   @media (min-width: $desktop-width) {
     max-width: 1366px;
-    padding: 100px 103px 100px 100px;
+    padding: 100px 103px 100px 103px;
   }
 }
 
@@ -43,6 +43,8 @@
 
   @media (min-width: $desktop-width) {
     text-align: left;
+    font-size: 54px;
+    margin-bottom: 51px;
   }
 }
 
@@ -62,13 +64,14 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: min-content;
     margin: 0;
   }
 }
 
 .faq__tabs-item {
   color: $basic-blue;
-  background-color: none;
+  background-color: transparent;
 }
 
 .faq__tab {
@@ -139,6 +142,11 @@
     padding-top: 36px;
     padding-bottom: 8px;
   }
+  @media (min-width: $desktop-width) {
+    min-height: 81px;
+    padding-top: 36px;
+    padding-bottom: 30px;
+  }
 }
 
 .faq__question:first-child {
@@ -147,6 +155,11 @@
     padding-top: 35px;
     padding-bottom: 25px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 31px;
+    padding-bottom: 19px;
+  }
 }
 
 .faq__question:last-child {
@@ -154,6 +167,10 @@
   @media (min-width: $tablet-width) {
     padding-top: 26px;
     padding-bottom: 27px;
+  }
+  @media (min-width: $desktop-width) {
+    padding-top: 31px;
+    padding-bottom: 32px;
   }
 }
 
@@ -165,6 +182,9 @@
 
   @media (min-width: $tablet-width) {
     font-size: 22px;
+  }
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
   }
 }
 
@@ -178,12 +198,15 @@
 
 .faq__question[open] summary {
   margin-bottom: 20px;
+  @media (min-width: $desktop-width) {
+    margin-bottom: 35px;
+  }
 }
 
 .faq__question summary {
   list-style: none;
   position: relative;
-  max-width: 260px;
+  max-width: 245px;
   cursor: pointer;
 
   span {
@@ -199,7 +222,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 830px;
+    max-width: 800px;
   }
 }
 
@@ -208,6 +231,14 @@
   @media (min-width: $tablet-width) {
     span:last-child {
       display: block;
+    }
+  }
+}
+
+.faq__question:last-child summary {
+  span:last-child {
+    @media (min-width: $desktop-width) {
+      display: inline;
     }
   }
 }
@@ -227,13 +258,16 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: -30px;
+  right: -46px;
   background-color: $basic-blue;
 
   @media (min-width: $tablet-width) {
     width: 40px;
     height: 40px;
     right: -27px;
+  }
+  @media (min-width: $desktop-width) {
+    right: -60px;
   }
 }
 
@@ -244,7 +278,7 @@
   content: "";
   top: 50%;
   transform: translateY(-50%);
-  right: -25px;
+  right: -40px;
   mask: url("/img/sprite/minus.svg") no-repeat center;
   background-color: $basic-white;
   z-index: 999;
@@ -253,13 +287,16 @@
     mask-size: 20px 20px;
     right: -18px;
   }
+  @media (min-width: $desktop-width) {
+    right: -51px;
+  }
 }
 
 .faq__question:not([open]) summary::after {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: -30px;
+  right: -46px;
   background-color: transparent;
   border: 1px solid $basic-blue;
 
@@ -268,6 +305,9 @@
     height: 40px;
     right: -27px;
     top: calc(50% - 1px);
+  }
+  @media (min-width: $desktop-width) {
+    right: -60px;
   }
 }
 
@@ -278,13 +318,16 @@
   content: "";
   top: 50%;
   transform: translateY(-50%);
-  right: -25px;
+  right: -40px;
   mask: url("/img/sprite/plus.svg") no-repeat center;
   background-color: var(--btn-border);
 
   @media (min-width: $tablet-width) {
     mask-size: 20px 20px;
     right: -18px;
+  }
+  @media (min-width: $desktop-width) {
+    right: -50px;
   }
 }
 
@@ -321,13 +364,33 @@
   line-height: 125%;
   margin: 0;
 
-  span {
+  span:nth-child(1) {
+    display: inline;
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+
+  span:nth-child(2) {
     display: block;
+    @media (min-width: $desktop-width) {
+      display: inline;
+    }
+  }
+
+  span:nth-child(3) {
+    display: inline;
+    @media (min-width: $desktop-width) {
+      display: inline;
+    }
   }
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
     max-width: 570px;
     line-height: 133%;
+  }
+  @media (min-width: $desktop-width) {
+    max-width: 630px;
   }
 }

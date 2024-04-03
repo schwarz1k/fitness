@@ -5,6 +5,9 @@
   @media (min-width: $tablet-width) {
     min-height: 751px;
   }
+  @media (min-width: $desktop-width) {
+    min-height: 761px;
+  }
 }
 
 .about__container {
@@ -19,7 +22,7 @@
     max-width: 1366px;
     display: grid;
     grid-template-columns: 355px 1fr;
-    padding: 120px 108px 0 99px;
+    padding: 121px 104px 0 103px;
   }
 }
 
@@ -53,7 +56,7 @@
 
   @media (min-width: $desktop-width) {
     font-size: 54px;
-    margin-bottom: 23px;
+    margin-bottom: 27px;
   }
 }
 
@@ -71,8 +74,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 90px;
-    font-size: 1.4em;
+    margin-bottom: 93px;
+    font-size: 22px;
+    line-height: 100%;
   }
 }
 
@@ -101,8 +105,8 @@
 
   @media (min-width: $desktop-width) {
     margin-left: 0;
-    font-size: 1.16em;
-    line-height: 145%;
+    font-size: 16px;
+    line-height: 150%;
   }
 }
 
@@ -126,6 +130,12 @@
 
   @media (min-width: $desktop-width) {
     margin-right: -1px;
+  }
+}
+
+.about__img--player {
+  @media (min-width: $desktop-width) {
+    margin-right: -3px;
   }
 }
 
@@ -197,7 +207,7 @@
   @media (min-width: $desktop-width) {
     width: 100px;
     height: 100px;
-    left: 50%;
+    left: calc(50% + 3px);
   }
 }
 
@@ -214,6 +224,7 @@
   @media (min-width: $desktop-width) {
     width: 72px;
     height: 72px;
+    left: calc(50% - (-3px));
   }
 }
 
@@ -250,6 +261,7 @@
   @media (min-width: $desktop-width) {
     width: 13px;
     height: 15px;
+    left: calc(50% - (-4px));
   }
 }
 

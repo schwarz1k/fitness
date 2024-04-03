@@ -5,6 +5,10 @@
   @media (min-width: $tablet-width) {
     padding-top: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 102px;
+  }
 }
 
 .games__container {
@@ -56,6 +60,10 @@
   span {
     display: block;
   }
+  @media (min-width: $desktop-width) {
+    font-size: 82px;
+    line-height: 117%;
+  }
 }
 
 .games__list {
@@ -71,6 +79,7 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
+    margin: 0 0 0 75px;
   }
 }
 
@@ -83,6 +92,10 @@
 
   span {
     display: block;
+
+    @media (min-width: $desktop-width) {
+      display: inline;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -90,6 +103,9 @@
     margin: 7px 0 5px;
     line-height: 133%;
     font-weight: 300;
+  }
+  @media (min-width: $desktop-width) {
+    margin: -7px 0 -9px;
   }
 }
 
@@ -111,6 +127,9 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 1px;
   }
+  @media (min-width: $desktop-width) {
+    padding-bottom: 5px;
+  }
 }
 
 .games__list-detail {
@@ -126,12 +145,20 @@
   @media (min-width: $tablet-width) {
     padding-top: 10px;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+    padding-top: 7px;
+  }
 }
 
 .games__list-detail--time {
 
   @media (min-width: $tablet-width) {
-    padding-top: 0px;
+    padding-top: 0;
+  }
+  @media (min-width: $desktop-width) {
+    padding-top: 6px;
   }
 }
 
@@ -150,12 +177,19 @@
       margin-top: -1px;
       font-size: 14px;
     }
+    @media (min-width: $desktop-width) {
+      margin-top: -15px;
+    }
   }
 
   @media (min-width: $tablet-width) {
     margin-left: 7px;
     margin-top: -10px;
     font-size: 13px;
+  }
+  @media (min-width: $desktop-width) {
+    font-size: 14px;
+    margin-top: -12px;
   }
 }
 
@@ -170,6 +204,9 @@
     width: 220px;
     height: 66px;
   }
+  @media (min-width: $desktop-width) {
+    width: 340px;
+  }
 }
 
 .games__button:not(:last-child) {
@@ -182,7 +219,7 @@
 }
 
 .games__list-item:not(:last-child) {
-  margin-bottom: -10px;
+  margin-bottom: -4px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 10px;
@@ -191,11 +228,14 @@
 
 .games__list-term--time {
   font-size: 16px;
-  padding-bottom: 6px;
+  padding-bottom: 1px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
     padding-bottom: 0;
+  }
+  @media (min-width: $desktop-width) {
+    padding-bottom: 5px;
   }
 }
 

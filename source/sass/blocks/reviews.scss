@@ -10,6 +10,10 @@
     padding-top: 59px;
     padding-bottom: 22px;
   }
+  @media (min-width: $desktop-width) {
+    padding-top: 100px;
+    padding-bottom: 78px;
+  }
 }
 
 .reviews__title {
@@ -24,6 +28,9 @@
     font-size: 54px;
     margin: 0 0 37px;
   }
+  @media (min-width: $desktop-width) {
+    margin: 0 0 76px;
+  }
 }
 
 .reviews-swiper-container {
@@ -34,6 +41,9 @@
 
   @media (min-width: $tablet-width) {
     max-width: 500px;
+  }
+  @media (min-width: $desktop-width) {
+    max-width: 560px;
   }
 }
 
@@ -63,6 +73,11 @@
     min-height: 242px;
     padding: 39px 15px 28px 30px;
   }
+  @media (min-width: $desktop-width) {
+    min-height: 257px;
+    min-width: 560px;
+    padding: 60px 20px 30px 60px;
+  }
 }
 
 .reviews-slider__holder {
@@ -78,6 +93,10 @@
   @media (min-width: $tablet-width) {
     text-align: left;
     margin-left: 40px;
+  }
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    margin-left: 30px;
   }
 }
 
@@ -102,7 +121,15 @@
   margin: 0 auto;
   max-width: 190px;
 
+  span:nth-child(1) {
+    display: inline;
+  }
+
   span:nth-child(2) {
+    display: block;
+  }
+
+  span:nth-child(3) {
     display: block;
   }
 
@@ -114,20 +141,31 @@
     span:nth-child(1) {
       display: block;
     }
+
+    span:nth-child(2) {
+      display: inline;
+    }
+
+    span:nth-child(3) {
+      display: block;
+    }
   }
-}
 
-.reviews__slider-description span span {
-  display: inline;
-  @media (max-width: $tablet-width) {
-    outline: 5px solid red;
-  }
-}
+  @media (min-width: $desktop-width) {
 
-.reviews__slider-description span span span {
+    min-width: 325px;
 
-  @media (min-width: $tablet-width) {
-    display: block;
+    span:nth-child(1) {
+      display: inline;
+    }
+
+    span:nth-child(2) {
+      display: block;
+    }
+
+    span:nth-child(3) {
+      display: inline;
+    }
   }
 }
 
@@ -154,6 +192,20 @@
   }
 }
 
+.reviews-swiper-button-prev {
+  @media (min-width: $desktop-width) {
+    top: calc(50% - -9px);
+    left: calc(50% - 356px);
+  }
+}
+
+.reviews-swiper-button-next {
+  @media (min-width: $desktop-width) {
+    top: calc(50% - -9px);
+    right: calc(50% - 356px);
+  }
+}
+
 .reviews-swiper-button-prev .swiper-button-prev-inner {
   display: block;
   position: relative;
@@ -164,6 +216,14 @@
   height: 32px;
   mask-image: url("/img/sprite/arrow-prev.svg");
   background-color: $basic-blue;
+
+  @media (min-width: $tablet-width) {
+    top: calc(50% - (-4px));
+  }
+  @media (min-width: $desktop-width) {
+    top: calc(50% - 1px);
+    left: calc(50% - 9px);
+  }
 }
 
 .reviews-swiper-button-prev:active .swiper-button-prev-inner {
@@ -181,6 +241,14 @@
   height: 32px;
   mask-image: url("/img/sprite/arrow-prev.svg");
   background-color: $basic-blue;
+
+  @media (min-width: $tablet-width) {
+    top: calc(50% - (-4px));
+  }
+  @media (min-width: $desktop-width) {
+    top: calc(50% - 1px);
+    left: calc(50% - 9px);
+  }
 }
 
 .reviews-swiper-button-next:active .swiper-button-prev-inner {

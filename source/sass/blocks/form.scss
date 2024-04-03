@@ -20,10 +20,14 @@
 
 .form__wrapper {
   margin-left: -4px;
+  padding: 0;
+  list-style-type: none;
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 205px 205px;
     gap: 30px;
+    margin: 0;
   }
 }
 

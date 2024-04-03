@@ -23,6 +23,7 @@ export function initializeJurySwiper() {
       },
       1366: {
         slidesPerView: 4,
+        spaceBetween: 0,
       },
     },
   });

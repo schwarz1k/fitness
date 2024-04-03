@@ -12,6 +12,7 @@
   @media (min-width: $desktop-width) {
     background: var(--primary-bg) url("../img/price/weights-desktop.png") no-repeat right bottom;
     background-size: auto;
+    padding-top: 100px;
     padding-bottom: 100px;
   }
 }
@@ -43,6 +44,11 @@
     font-size: 42px;
     margin: 0 0 36px;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 54px;
+    margin-bottom: 20px;
+  }
 }
 
 .price__option {
@@ -67,6 +73,8 @@
 
   @media (min-width: $desktop-width) {
     max-width: 350px;
+    font-size: 20px;
+    margin-bottom: 40px;
   }
 }
 
@@ -76,6 +84,10 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 9px;
   }
 }
 
@@ -183,6 +195,8 @@
 
   @media (min-width: $desktop-width) {
     min-width: 360px;
+    min-height: 448px;
+    padding: 53px 58px 51px 58px;
   }
 }
 
@@ -198,6 +212,11 @@
     font-size: 24px;
     margin: 0 0 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 26px;
+    margin: 5px 0 18px;
+  }
 }
 
 .price__card-subtitle {
@@ -210,6 +229,10 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     margin: 0 0 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 77px;
   }
 }
 
@@ -238,6 +261,10 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     margin: 0 0 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 19px;
   }
 }
 
@@ -272,6 +299,12 @@
   @media (min-width: $tablet-width) {
     min-width: 250px;
     margin-left: -20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 195px;
+    min-width: 0;
+    margin-left: 0;
   }
 }
 
