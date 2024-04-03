@@ -256,20 +256,27 @@
 }
 
 .faq__accordion .open summary::before {
+  display: block;
   position: absolute;
-  width: 20px;
-  height: 20px;
   content: "";
   top: 50%;
-  transform: translateY(-50%);
-  right: -40px;
-  mask: url("/img/sprite/minus.svg") no-repeat center;
+  transform: translateY(-50%) rotate(45deg);
+  right: -39px;
+  z-index: 1;
+  width: 20px;
+  height: 19px;
+  mask: url("/__spritemap#sprite-minus") no-repeat center;
+  mask-size: 11px 58px;
   background-color: $basic-white;
-  z-index: 999;
 
   @media (min-width: $tablet-width) {
-    mask-size: 20px 20px;
+    transform: translateY(-50%) rotate(-45deg);
     right: -18px;
+    width: 20px;
+    height: 14px;
+    mask: url("/__spritemap#sprite-plus") no-repeat center;
+    mask-size: 16px 113px;
+    background-color: $basic-white;
   }
 
   @media (min-width: $desktop-width) {
@@ -299,18 +306,23 @@
 
 .faq__accordion details:not([open]) summary::before {
   position: absolute;
-  width: 20px;
-  height: 20px;
   content: "";
   top: 50%;
   transform: translateY(-50%);
   right: -40px;
-  mask: url("/img/sprite/plus.svg") no-repeat center;
+  width: 20px;
+  height: 14px;
+  mask: url("/__spritemap#sprite-plus") no-repeat center;
+  mask-size: 13px 368px;
   background-color: var(--btn-border);
 
   @media (min-width: $tablet-width) {
-    mask-size: 20px 20px;
     right: -18px;
+    width: 20px;
+    height: 21px;
+    mask: url("/__spritemap#sprite-plus") no-repeat center;
+    mask-size: 20px 334px;
+    background-color: var(--btn-border);
   }
 
   @media (min-width: $desktop-width) {

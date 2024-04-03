@@ -1,5 +1,9 @@
 .contacts-container {
   color: $basic-blue;
+
+  @media (min-width: $desktop-width) {
+    border-top: 1px solid var(--divider);
+  }
 }
 
 .contacts__wrapper {

@@ -3,7 +3,7 @@
   padding: 40px 15px 39px;
 
   @media (min-width: $tablet-width) {
-    padding: 44px 15px 18px;
+    padding: 46px 15px 18px;
   }
 
   @media (min-width: $desktop-width) {
@@ -179,9 +179,12 @@
   &::after {
     width: 13px;
     height: 8px;
-    mask: url("../img/sprite/icon-vk.svg") no-repeat center;
-    mask-size: cover;
     background-color: var(--dark);
+    mask: url("/__spritemap#sprite-icon-vk") no-repeat center;
+    mask-size: 15px 204px;
+    @media (min-width: $tablet-width) {
+      mask-size: 13px 204px;
+    }
   }
 }
 
@@ -189,9 +192,9 @@
   &::after {
     width: 10px;
     height: 17px;
-    mask: url("../img/sprite/icon-ok.svg") no-repeat center;
-    mask-size: cover;
     background-color: var(--dark);
+    mask: url("/__spritemap#sprite-icon-ok") no-repeat center;
+    mask-size: 11px 149px;
   }
 }
 
@@ -199,8 +202,8 @@
   &::after {
     width: 15px;
     height: 15px;
-    mask: url("../img/sprite/icon-reddit.svg") no-repeat center;
-    mask-size: cover;
     background-color: var(--dark);
+    mask: url("/__spritemap#sprite-icon-ok") no-repeat center;
+    mask-size: 16px 182px;
   }
 }

@@ -256,14 +256,14 @@
   width: 12px;
   height: 12px;
   mask: url("/__spritemap#sprite-player-button") no-repeat center;
-  mask-size: 9px 230px;
+  mask-size: 9px 302px;
   background-color: $basic-white;
 
   @media (min-width: $desktop-width) {
     width: 15px;
     height: 15px;
     mask: url("/__spritemap#sprite-player-button") no-repeat center;
-    mask-size: 13px 203px;
+    mask-size: 13px 275px;
     background-color: $basic-white;
     left: calc(50% + 5px);
   }

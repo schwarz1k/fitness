@@ -196,33 +196,39 @@
 }
 
 .reviews-swiper-button-prev {
+  @media (min-width: $tablet-width) {
+    top: calc(50% + 14px);
+    left: calc(50% - 356px);
+  }
+
   @media (min-width: $desktop-width) {
-    top: calc(50% - -9px);
+    top: calc(50% + 14px);
     left: calc(50% - 356px);
   }
 }
 
 .reviews-swiper-button-next {
-  @media (min-width: $desktop-width) {
-    top: calc(50% - -9px);
+  @media (min-width: $tablet-width) {
+    top: calc(50% + 14px);
     right: calc(50% - 356px);
+  }
+  @media (min-width: $desktop-width) {
+    top: calc(50% + 10px);
+    right: calc(50% - 354px);
   }
 }
 
 .reviews-swiper-button-prev .swiper-button-prev-inner {
   display: block;
   position: relative;
-  top: 50%;
   left: 16px;
   transform: translateY(-50%);
-  width: 17px;
+  width: 36px;
   height: 32px;
-  mask-image: url("/img/sprite/arrow-prev.svg");
+  mask: url("/__spritemap#sprite-arrow-prev") no-repeat center;
+  top: 50%;
+  mask-size: 36px 101px;
   background-color: $basic-blue;
-
-  @media (min-width: $tablet-width) {
-    top: calc(50% - (-4px));
-  }
 
   @media (min-width: $desktop-width) {
     top: calc(50% - 1px);
@@ -238,21 +244,18 @@
 .reviews-swiper-button-next .swiper-button-prev-inner {
   display: block;
   position: relative;
-  top: 50%;
-  left: 16px;
+  top: calc(50% + 1px);
+  left: 2px;
   transform: translateY(-50%) scale(-1);
-  width: 17px;
+  width: 36px;
   height: 32px;
-  mask-image: url("/img/sprite/arrow-prev.svg");
+  mask: url("/__spritemap#sprite-arrow-prev") no-repeat center;
+  mask-size: 36px 101px;
   background-color: $basic-blue;
-
-  @media (min-width: $tablet-width) {
-    top: calc(50% - (-4px));
-  }
 
   @media (min-width: $desktop-width) {
     top: calc(50% - 1px);
-    left: calc(50% - 9px);
+    left: calc(50% - 25px);
   }
 }
 
