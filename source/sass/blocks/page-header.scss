@@ -48,6 +48,13 @@
   }
 }
 
+.page-header__logo-wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
 .page-header__logo {
   width: 100px;
   height: 20px;

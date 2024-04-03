@@ -47,6 +47,13 @@
 
   @media (min-width: $desktop-width) {
     padding: 60px 80px;
+    grid-auto-rows: min-content;
+  }
+}
+
+.games__date-title-wrapper {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 37px;
   }
 }
 
@@ -102,12 +109,12 @@
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
-    margin: 7px 0 5px;
+    margin: 12px 0 9px;
     line-height: 133%;
     font-weight: 300;
   }
   @media (min-width: $desktop-width) {
-    margin: -7px 0 -9px;
+    margin: -7px 0 31px;
   }
 }
 
@@ -197,17 +204,22 @@
 
 .games__button {
   width: 210px;
-  height: 60px;
+  min-height: 60px;
   grid-column: 1 / span 2;
   margin: 0 auto;
   font-size: 12px;
+  text-decoration: none;
+  padding-left: 50px;
+  padding-right: 50px;
 
   @media (min-width: $tablet-width) {
     width: 220px;
-    height: 66px;
+    min-height: 66px;
+    padding: 25px 55px;
   }
   @media (min-width: $desktop-width) {
     width: 340px;
+    padding: 25px 115px;
   }
 }
 

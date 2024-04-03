@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const lessonCounts = [12, 72, 144]; // Количество занятий для каждого срока
 
   optionItems.forEach((option, index) => {
-    option.addEventListener('click', () => {
+    const handleClick = () => {
       optionItems.forEach((item) => {
         item.classList.remove('price__option-item--active');
       });
@@ -27,6 +27,14 @@ document.addEventListener('DOMContentLoaded', () => {
       const subtitleOffers = document.querySelector('.price__card-subtitle--offers');
       const lessonCount = lessonCounts[durationIndex];
       subtitleOffers.textContent = `${lessonCount} занятий`;
+    };
+
+    option.addEventListener('click', handleClick);
+    option.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        handleClick();
+      }
     });
+    option.addEventListener('focus', handleClick);
   });
 });

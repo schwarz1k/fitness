@@ -30,7 +30,7 @@ export function initializeJurySwiper() {
 }
 
 export function initializeReviewsSwiper() {
-  return new Swiper('.swiper-container.reviews-swiper-container', {
+  const reviewsSwiper = new Swiper('.swiper-container.reviews-swiper-container', {
     slidesPerView: 1,
     spaceBetween: 0,
     loop: false,
@@ -49,4 +49,59 @@ export function initializeReviewsSwiper() {
       },
     },
   });
+
+  document.querySelectorAll('.swiper-slide').forEach((slide) => {
+    slide.addEventListener('mouseenter', function () {
+      const parentSlider = this.closest('.reviews-slider');
+      if (!parentSlider) {
+        this.classList.add('expanded');
+      }
+    });
+
+    slide.addEventListener('mouseleave', function () {
+      const parentSlider = this.closest('.reviews-slider');
+      if (!parentSlider) {
+        this.classList.remove('expanded');
+      }
+    });
+
+    slide.addEventListener('focusin', function () {
+      const parentSlider = this.closest('.reviews-slider');
+      if (!parentSlider) {
+        this.classList.add('expanded');
+      }
+    });
+
+    slide.addEventListener('focusout', function () {
+      const parentSlider = this.closest('.reviews-slider');
+      if (!parentSlider) {
+        this.classList.remove('expanded');
+      }
+    });
+  });
+
+  const prevButton = document.querySelector('.reviews-swiper-button-prev');
+  const nextButton = document.querySelector('.reviews-swiper-button-next');
+
+  prevButton.addEventListener('click', function() {
+    reviewsSwiper.slidePrev();
+  });
+
+  nextButton.addEventListener('click', function() {
+    reviewsSwiper.slideNext();
+  });
+
+  prevButton.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter' || event.key === ' ') {
+      reviewsSwiper.slidePrev();
+    }
+  });
+
+  nextButton.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter' || event.key === ' ') {
+      reviewsSwiper.slideNext();
+    }
+  });
+
+  return reviewsSwiper;
 }
